@@ -1,1 +1,904 @@
-{"Number of Graduates": {"2010": {"All fields of education": {"All NFQ Levels": 34570.0, "NFQ Level 6": 160.0, "NFQ Level 7": 970.0, "NFQ Level 8": 90.0, "NFQ Level 9": 170.0, "NFQ Level 10": 3560.0}, "Education": {"All NFQ Levels": 1630.0, "NFQ Level 6": 720.0, "NFQ Level 7": 2000.0, "NFQ Level 8": 810.0, "NFQ Level 9": 340.0, "NFQ Level 10": 4060.0}, "Arts and Humanities": {"All NFQ Levels": 2530.0, "NFQ Level 6": 1060.0, "NFQ Level 7": 3260.0, "NFQ Level 8": 940.0, "NFQ Level 9": 2200.0, "NFQ Level 10": 450.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 100.0, "NFQ Level 6": 1520.0, "NFQ Level 7": 730.0, "NFQ Level 8": 670.0, "NFQ Level 9": 360.0, "NFQ Level 10": 980.0}, "Business, Administration and Law": {"All NFQ Levels": 530.0, "NFQ Level 6": 410.0, "NFQ Level 7": 2950.0, "NFQ Level 8": 0.0, "NFQ Level 9": 1380.0, "NFQ Level 10": 1200.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 0.0, "NFQ Level 6": 220.0, "NFQ Level 7": 0.0, "NFQ Level 8": 10.0, "NFQ Level 9": 0.0, "NFQ Level 10": 10.0}, "Information and Communication Technologies": {"All NFQ Levels": 90.0, "NFQ Level 6": 0.0, "NFQ Level 7": 20.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 180.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 0.0, "NFQ Level 6": 10.0, "NFQ Level 7": 190.0, "NFQ Level 8": 180.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 60.0, "NFQ Level 10": 70.0}, "Health and Welfare": {"All NFQ Levels": 50.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 110.0, "NFQ Level 9": 4260.0, "NFQ Level 10": 0.0}, "Services": {"All NFQ Levels": 290.0, "NFQ Level 6": 0.0, "NFQ Level 7": 70.0, "NFQ Level 8": 10.0, "NFQ Level 9": 790.0, "NFQ Level 10": 220.0}}, "2011": {"All fields of education": {"All NFQ Levels": 0.0, "NFQ Level 6": 300.0, "NFQ Level 7": 70.0, "NFQ Level 8": 20.0, "NFQ Level 9": 300.0, "NFQ Level 10": 520.0}, "Education": {"All NFQ Levels": 70.0, "NFQ Level 6": 220.0, "NFQ Level 7": 0.0, "NFQ Level 8": 260.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Arts and Humanities": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 430.0, "NFQ Level 9": 230.0, "NFQ Level 10": 170.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 20.0, "NFQ Level 6": 0.0, "NFQ Level 7": 290.0, "NFQ Level 8": 21660.0, "NFQ Level 9": 140.0, "NFQ Level 10": 390.0}, "Business, Administration and Law": {"All NFQ Levels": 80.0, "NFQ Level 6": 100.0, "NFQ Level 7": 2490.0, "NFQ Level 8": 750.0, "NFQ Level 9": 410.0, "NFQ Level 10": 1250.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 450.0, "NFQ Level 6": 240.0, "NFQ Level 7": 2630.0, "NFQ Level 8": 1460.0, "NFQ Level 9": 500.0, "NFQ Level 10": 2410.0}, "Information and Communication Technologies": {"All NFQ Levels": 530.0, "NFQ Level 6": 1480.0, "NFQ Level 7": 190.0, "NFQ Level 8": 70.0, "NFQ Level 9": 1110.0, "NFQ Level 10": 580.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 510.0, "NFQ Level 6": 200.0, "NFQ Level 7": 460.0, "NFQ Level 8": 230.0, "NFQ Level 9": 170.0, "NFQ Level 10": 2020.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 0.0, "NFQ Level 6": 790.0, "NFQ Level 7": 6960.0, "NFQ Level 8": 20.0, "NFQ Level 9": 70.0, "NFQ Level 10": 10.0}, "Health and Welfare": {"All NFQ Levels": 0.0, "NFQ Level 6": 990.0, "NFQ Level 7": 80.0, "NFQ Level 8": 0.0, "NFQ Level 9": 690.0, "NFQ Level 10": 40.0}, "Services": {"All NFQ Levels": 20.0, "NFQ Level 6": 1310.0, "NFQ Level 7": 580.0, "NFQ Level 8": 40.0, "NFQ Level 9": 710.0, "NFQ Level 10": 0.0}}, "2012": {"All fields of education": {"All NFQ Levels": 510.0, "NFQ Level 6": 10.0, "NFQ Level 7": 30.0, "NFQ Level 8": 370.0, "NFQ Level 9": 150.0, "NFQ Level 10": 160.0}, "Education": {"All NFQ Levels": 140.0, "NFQ Level 6": 30.0, "NFQ Level 7": 10.0, "NFQ Level 8": 10.0, "NFQ Level 9": 820.0, "NFQ Level 10": 0.0}, "Arts and Humanities": {"All NFQ Levels": 180.0, "NFQ Level 6": 500.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 70.0, "NFQ Level 6": 10.0, "NFQ Level 7": 0.0, "NFQ Level 8": 50.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Business, Administration and Law": {"All NFQ Levels": 110.0, "NFQ Level 6": 10.0, "NFQ Level 7": 0.0, "NFQ Level 8": 60.0, "NFQ Level 9": 0.0, "NFQ Level 10": 40.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 40.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 10.0}, "Information and Communication Technologies": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 100.0, "NFQ Level 9": 0.0, "NFQ Level 10": 10.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 2390.0, "NFQ Level 6": 20.0, "NFQ Level 7": 0.0, "NFQ Level 8": 50.0, "NFQ Level 9": 0.0, "NFQ Level 10": 150.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 90.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 150.0}, "Health and Welfare": {"All NFQ Levels": 30.0, "NFQ Level 6": 0.0, "NFQ Level 7": 180.0, "NFQ Level 8": 10.0, "NFQ Level 9": 100.0, "NFQ Level 10": 0.0}, "Services": {"All NFQ Levels": 90.0, "NFQ Level 6": 80.0, "NFQ Level 7": 550.0, "NFQ Level 8": 510.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}}, "2013": {"All fields of education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 380.0, "NFQ Level 8": 0.0, "NFQ Level 9": 10.0, "NFQ Level 10": 10.0}, "Education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Arts and Humanities": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 0.0, "NFQ Level 6": 10.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Business, Administration and Law": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Information and Communication Technologies": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Health and Welfare": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Services": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 1550.0, "NFQ Level 9": 10.0, "NFQ Level 10": 0.0}}, "2014": {"All fields of education": {"All NFQ Levels": 40.0, "NFQ Level 6": 0.0, "NFQ Level 7": 30.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 60.0}, "Education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 30.0, "NFQ Level 9": 0.0, "NFQ Level 10": 160.0}, "Arts and Humanities": {"All NFQ Levels": 10.0, "NFQ Level 6": 90.0, "NFQ Level 7": 0.0, "NFQ Level 8": 60.0, "NFQ Level 9": 0.0, "NFQ Level 10": 420.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 360.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 280.0}, "Business, Administration and Law": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 820.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 10.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 0.0, "NFQ Level 6": 120.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 20.0, "NFQ Level 10": 0.0}, "Information and Communication Technologies": {"All NFQ Levels": 0.0, "NFQ Level 6": 150.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 10.0, "NFQ Level 10": 0.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 10.0, "NFQ Level 6": 0.0, "NFQ Level 7": 30.0, "NFQ Level 8": 80.0, "NFQ Level 9": 130.0, "NFQ Level 10": 150.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 100.0, "NFQ Level 10": 0.0}, "Health and Welfare": {"All NFQ Levels": 10.0, "NFQ Level 6": 10.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Services": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}}, "2015": {"All fields of education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Arts and Humanities": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 5420.0, "NFQ Level 6": 140.0, "NFQ Level 7": 30.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 720.0}, "Business, Administration and Law": {"All NFQ Levels": 140.0, "NFQ Level 6": 40.0, "NFQ Level 7": 220.0, "NFQ Level 8": 60.0, "NFQ Level 9": 140.0, "NFQ Level 10": 640.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 210.0, "NFQ Level 6": 100.0, "NFQ Level 7": 940.0, "NFQ Level 8": 140.0, "NFQ Level 9": 270.0, "NFQ Level 10": 40.0}, "Information and Communication Technologies": {"All NFQ Levels": 10.0, "NFQ Level 6": 630.0, "NFQ Level 7": 160.0, "NFQ Level 8": 160.0, "NFQ Level 9": 0.0, "NFQ Level 10": 40.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 20.0, "NFQ Level 6": 20.0, "NFQ Level 7": 520.0, "NFQ Level 8": 0.0, "NFQ Level 9": 50.0, "NFQ Level 10": 20.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Health and Welfare": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 10.0}, "Services": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 10.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}}, "2016": {"All fields of education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 320.0, "NFQ Level 10": 0.0}, "Arts and Humanities": {"All NFQ Levels": 10.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 60.0, "NFQ Level 10": 10.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 0.0, "NFQ Level 6": 20.0, "NFQ Level 7": 30.0, "NFQ Level 8": 0.0, "NFQ Level 9": 10.0, "NFQ Level 10": 50.0}, "Business, Administration and Law": {"All NFQ Levels": 70.0, "NFQ Level 6": 20.0, "NFQ Level 7": 0.0, "NFQ Level 8": 30.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 10.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Information and Communication Technologies": {"All NFQ Levels": 10.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 4000.0, "NFQ Level 9": 130.0, "NFQ Level 10": 20.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 570.0, "NFQ Level 8": 60.0, "NFQ Level 9": 20.0, "NFQ Level 10": 150.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 40.0, "NFQ Level 6": 90.0, "NFQ Level 7": 460.0, "NFQ Level 8": 160.0, "NFQ Level 9": 50.0, "NFQ Level 10": 710.0}, "Health and Welfare": {"All NFQ Levels": 120.0, "NFQ Level 6": 170.0, "NFQ Level 7": 10.0, "NFQ Level 8": 10.0, "NFQ Level 9": 510.0, "NFQ Level 10": 130.0}, "Services": {"All NFQ Levels": 150.0, "NFQ Level 6": 0.0, "NFQ Level 7": 30.0, "NFQ Level 8": 20.0, "NFQ Level 9": 20.0, "NFQ Level 10": 330.0}}, "2017": {"All fields of education": {"All NFQ Levels": 0.0, "NFQ Level 6": 40.0, "NFQ Level 7": 1040.0, "NFQ Level 8": 10.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Education": {"All NFQ Levels": 0.0, "NFQ Level 6": 140.0, "NFQ Level 7": 10.0, "NFQ Level 8": 0.0, "NFQ Level 9": 70.0, "NFQ Level 10": 0.0}, "Arts and Humanities": {"All NFQ Levels": 20.0, "NFQ Level 6": 180.0, "NFQ Level 7": 30.0, "NFQ Level 8": 0.0, "NFQ Level 9": 150.0, "NFQ Level 10": 0.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 100.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 120.0, "NFQ Level 9": 20.0, "NFQ Level 10": 10.0}, "Business, Administration and Law": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 170.0, "NFQ Level 10": 0.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 10.0, "NFQ Level 6": 40.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Information and Communication Technologies": {"All NFQ Levels": 10.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 10.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 10.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Health and Welfare": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 10.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Services": {"All NFQ Levels": 2260.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 430.0}}, "2018": {"All fields of education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 200.0, "NFQ Level 8": 10.0, "NFQ Level 9": 70.0, "NFQ Level 10": 450.0}, "Education": {"All NFQ Levels": 80.0, "NFQ Level 6": 40.0, "NFQ Level 7": 280.0, "NFQ Level 8": 0.0, "NFQ Level 9": 50.0, "NFQ Level 10": 0.0}, "Arts and Humanities": {"All NFQ Levels": 0.0, "NFQ Level 6": 210.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 10.0, "NFQ Level 6": 0.0, "NFQ Level 7": 400.0, "NFQ Level 8": 0.0, "NFQ Level 9": 10.0, "NFQ Level 10": 0.0}, "Business, Administration and Law": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Information and Communication Technologies": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 30.0, "NFQ Level 10": 0.0}, "Health and Welfare": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Services": {"All NFQ Levels": 0.0, "NFQ Level 6": 10.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 20.0}}, "2019": {"All fields of education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Education": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Arts and Humanities": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 1430.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Social Sciences, Journalism and Information": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 280.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 110.0}, "Business, Administration and Law": {"All NFQ Levels": 10.0, "NFQ Level 6": 70.0, "NFQ Level 7": 330.0, "NFQ Level 8": 30.0, "NFQ Level 9": 20.0, "NFQ Level 10": 100.0}, "Natural Sciences, Mathematics and Statistics": {"All NFQ Levels": 0.0, "NFQ Level 6": 30.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 170.0, "NFQ Level 10": 0.0}, "Information and Communication Technologies": {"All NFQ Levels": 0.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 10.0, "NFQ Level 9": 0.0, "NFQ Level 10": 260.0}, "Engineering, Manufacturing and Construction": {"All NFQ Levels": 0.0, "NFQ Level 6": 10.0, "NFQ Level 7": 780.0, "NFQ Level 8": 0.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}, "Agriculture, Forestry, Fisheries and Veterinary": {"All NFQ Levels": 0.0, "NFQ Level 6": 150.0, "NFQ Level 7": 0.0, "NFQ Level 8": 0.0, "NFQ Level 9": 90.0, "NFQ Level 10": 0.0}, "Health and Welfare": {"All NFQ Levels": 0.0, "NFQ Level 6": 130.0, "NFQ Level 7": 50.0, "NFQ Level 8": 0.0, "NFQ Level 9": 180.0, "NFQ Level 10": 0.0}, "Services": {"All NFQ Levels": 20.0, "NFQ Level 6": 0.0, "NFQ Level 7": 0.0, "NFQ Level 8": 30.0, "NFQ Level 9": 0.0, "NFQ Level 10": 0.0}}}}
+{
+    "Number of Graduates": {
+        "2010": {
+            "All fields of education": {
+                "All NFQ Levels": 34570.0,
+                "NFQ Level 6": 160.0,
+                "NFQ Level 7": 970.0,
+                "NFQ Level 8": 90.0,
+                "NFQ Level 9": 170.0,
+                "NFQ Level 10": 3560.0
+            },
+            "Education": {
+                "All NFQ Levels": 1630.0,
+                "NFQ Level 6": 720.0,
+                "NFQ Level 7": 2000.0,
+                "NFQ Level 8": 810.0,
+                "NFQ Level 9": 340.0,
+                "NFQ Level 10": 4060.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 2530.0,
+                "NFQ Level 6": 1060.0,
+                "NFQ Level 7": 3260.0,
+                "NFQ Level 8": 940.0,
+                "NFQ Level 9": 2200.0,
+                "NFQ Level 10": 450.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 100.0,
+                "NFQ Level 6": 1520.0,
+                "NFQ Level 7": 730.0,
+                "NFQ Level 8": 670.0,
+                "NFQ Level 9": 360.0,
+                "NFQ Level 10": 980.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 530.0,
+                "NFQ Level 6": 410.0,
+                "NFQ Level 7": 2950.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 1380.0,
+                "NFQ Level 10": 1200.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 220.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 10.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 90.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 20.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 180.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 10.0,
+                "NFQ Level 7": 190.0,
+                "NFQ Level 8": 180.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 60.0,
+                "NFQ Level 10": 70.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 50.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 110.0,
+                "NFQ Level 9": 4260.0,
+                "NFQ Level 10": 0.0
+            },
+            "Services": {
+                "All NFQ Levels": 290.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 70.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 790.0,
+                "NFQ Level 10": 220.0
+            }
+        },
+        "2011": {
+            "All fields of education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 300.0,
+                "NFQ Level 7": 70.0,
+                "NFQ Level 8": 20.0,
+                "NFQ Level 9": 300.0,
+                "NFQ Level 10": 520.0
+            },
+            "Education": {
+                "All NFQ Levels": 70.0,
+                "NFQ Level 6": 220.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 260.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 430.0,
+                "NFQ Level 9": 230.0,
+                "NFQ Level 10": 170.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 20.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 290.0,
+                "NFQ Level 8": 21660.0,
+                "NFQ Level 9": 140.0,
+                "NFQ Level 10": 390.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 80.0,
+                "NFQ Level 6": 100.0,
+                "NFQ Level 7": 2490.0,
+                "NFQ Level 8": 750.0,
+                "NFQ Level 9": 410.0,
+                "NFQ Level 10": 1250.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 450.0,
+                "NFQ Level 6": 240.0,
+                "NFQ Level 7": 2630.0,
+                "NFQ Level 8": 1460.0,
+                "NFQ Level 9": 500.0,
+                "NFQ Level 10": 2410.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 530.0,
+                "NFQ Level 6": 1480.0,
+                "NFQ Level 7": 190.0,
+                "NFQ Level 8": 70.0,
+                "NFQ Level 9": 1110.0,
+                "NFQ Level 10": 580.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 510.0,
+                "NFQ Level 6": 200.0,
+                "NFQ Level 7": 460.0,
+                "NFQ Level 8": 230.0,
+                "NFQ Level 9": 170.0,
+                "NFQ Level 10": 2020.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 790.0,
+                "NFQ Level 7": 6960.0,
+                "NFQ Level 8": 20.0,
+                "NFQ Level 9": 70.0,
+                "NFQ Level 10": 10.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 990.0,
+                "NFQ Level 7": 80.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 690.0,
+                "NFQ Level 10": 40.0
+            },
+            "Services": {
+                "All NFQ Levels": 20.0,
+                "NFQ Level 6": 1310.0,
+                "NFQ Level 7": 580.0,
+                "NFQ Level 8": 40.0,
+                "NFQ Level 9": 710.0,
+                "NFQ Level 10": 0.0
+            }
+        },
+        "2012": {
+            "All fields of education": {
+                "All NFQ Levels": 510.0,
+                "NFQ Level 6": 10.0,
+                "NFQ Level 7": 30.0,
+                "NFQ Level 8": 370.0,
+                "NFQ Level 9": 150.0,
+                "NFQ Level 10": 160.0
+            },
+            "Education": {
+                "All NFQ Levels": 140.0,
+                "NFQ Level 6": 30.0,
+                "NFQ Level 7": 10.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 820.0,
+                "NFQ Level 10": 0.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 180.0,
+                "NFQ Level 6": 500.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 70.0,
+                "NFQ Level 6": 10.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 50.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 110.0,
+                "NFQ Level 6": 10.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 60.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 40.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 40.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 10.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 100.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 10.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 2390.0,
+                "NFQ Level 6": 20.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 50.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 150.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 90.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 150.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 30.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 180.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 100.0,
+                "NFQ Level 10": 0.0
+            },
+            "Services": {
+                "All NFQ Levels": 90.0,
+                "NFQ Level 6": 80.0,
+                "NFQ Level 7": 550.0,
+                "NFQ Level 8": 510.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            }
+        },
+        "2013": {
+            "All fields of education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 380.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 10.0,
+                "NFQ Level 10": 10.0
+            },
+            "Education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 10.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Services": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 1550.0,
+                "NFQ Level 9": 10.0,
+                "NFQ Level 10": 0.0
+            }
+        },
+        "2014": {
+            "All fields of education": {
+                "All NFQ Levels": 40.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 30.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 60.0
+            },
+            "Education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 30.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 160.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 90.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 60.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 420.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 360.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 280.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 820.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 10.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 120.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 20.0,
+                "NFQ Level 10": 0.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 150.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 10.0,
+                "NFQ Level 10": 0.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 30.0,
+                "NFQ Level 8": 80.0,
+                "NFQ Level 9": 130.0,
+                "NFQ Level 10": 150.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 100.0,
+                "NFQ Level 10": 0.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 10.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Services": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            }
+        },
+        "2015": {
+            "All fields of education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 5420.0,
+                "NFQ Level 6": 140.0,
+                "NFQ Level 7": 30.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 720.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 140.0,
+                "NFQ Level 6": 40.0,
+                "NFQ Level 7": 220.0,
+                "NFQ Level 8": 60.0,
+                "NFQ Level 9": 140.0,
+                "NFQ Level 10": 640.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 210.0,
+                "NFQ Level 6": 100.0,
+                "NFQ Level 7": 940.0,
+                "NFQ Level 8": 140.0,
+                "NFQ Level 9": 270.0,
+                "NFQ Level 10": 40.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 630.0,
+                "NFQ Level 7": 160.0,
+                "NFQ Level 8": 160.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 40.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 20.0,
+                "NFQ Level 6": 20.0,
+                "NFQ Level 7": 520.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 50.0,
+                "NFQ Level 10": 20.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 10.0
+            },
+            "Services": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 10.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            }
+        },
+        "2016": {
+            "All fields of education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 320.0,
+                "NFQ Level 10": 0.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 60.0,
+                "NFQ Level 10": 10.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 20.0,
+                "NFQ Level 7": 30.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 10.0,
+                "NFQ Level 10": 50.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 70.0,
+                "NFQ Level 6": 20.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 30.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 4000.0,
+                "NFQ Level 9": 130.0,
+                "NFQ Level 10": 20.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 570.0,
+                "NFQ Level 8": 60.0,
+                "NFQ Level 9": 20.0,
+                "NFQ Level 10": 150.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 40.0,
+                "NFQ Level 6": 90.0,
+                "NFQ Level 7": 460.0,
+                "NFQ Level 8": 160.0,
+                "NFQ Level 9": 50.0,
+                "NFQ Level 10": 710.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 120.0,
+                "NFQ Level 6": 170.0,
+                "NFQ Level 7": 10.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 510.0,
+                "NFQ Level 10": 130.0
+            },
+            "Services": {
+                "All NFQ Levels": 150.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 30.0,
+                "NFQ Level 8": 20.0,
+                "NFQ Level 9": 20.0,
+                "NFQ Level 10": 330.0
+            }
+        },
+        "2017": {
+            "All fields of education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 40.0,
+                "NFQ Level 7": 1040.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 140.0,
+                "NFQ Level 7": 10.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 70.0,
+                "NFQ Level 10": 0.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 20.0,
+                "NFQ Level 6": 180.0,
+                "NFQ Level 7": 30.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 150.0,
+                "NFQ Level 10": 0.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 100.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 120.0,
+                "NFQ Level 9": 20.0,
+                "NFQ Level 10": 10.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 170.0,
+                "NFQ Level 10": 0.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 40.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 10.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Services": {
+                "All NFQ Levels": 2260.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 430.0
+            }
+        },
+        "2018": {
+            "All fields of education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 200.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 70.0,
+                "NFQ Level 10": 450.0
+            },
+            "Education": {
+                "All NFQ Levels": 80.0,
+                "NFQ Level 6": 40.0,
+                "NFQ Level 7": 280.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 50.0,
+                "NFQ Level 10": 0.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 210.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 400.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 10.0,
+                "NFQ Level 10": 0.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 30.0,
+                "NFQ Level 10": 0.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Services": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 10.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 20.0
+            }
+        },
+        "2019": {
+            "All fields of education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Education": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Arts and Humanities": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 1430.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Social Sciences, Journalism and Information": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 280.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 110.0
+            },
+            "Business, Administration and Law": {
+                "All NFQ Levels": 10.0,
+                "NFQ Level 6": 70.0,
+                "NFQ Level 7": 330.0,
+                "NFQ Level 8": 30.0,
+                "NFQ Level 9": 20.0,
+                "NFQ Level 10": 100.0
+            },
+            "Natural Sciences, Mathematics and Statistics": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 30.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 170.0,
+                "NFQ Level 10": 0.0
+            },
+            "Information and Communication Technologies": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 10.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 260.0
+            },
+            "Engineering, Manufacturing and Construction": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 10.0,
+                "NFQ Level 7": 780.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            },
+            "Agriculture, Forestry, Fisheries and Veterinary": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 150.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 90.0,
+                "NFQ Level 10": 0.0
+            },
+            "Health and Welfare": {
+                "All NFQ Levels": 0.0,
+                "NFQ Level 6": 130.0,
+                "NFQ Level 7": 50.0,
+                "NFQ Level 8": 0.0,
+                "NFQ Level 9": 180.0,
+                "NFQ Level 10": 0.0
+            },
+            "Services": {
+                "All NFQ Levels": 20.0,
+                "NFQ Level 6": 0.0,
+                "NFQ Level 7": 0.0,
+                "NFQ Level 8": 30.0,
+                "NFQ Level 9": 0.0,
+                "NFQ Level 10": 0.0
+            }
+        }
+    }
+}

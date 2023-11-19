@@ -7,7 +7,7 @@ urlBegining = "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDat
 urlEnd = "/JSON-stat/2.0/en"
 
 def getAllAsFile(dataset):
-    with open("./cso.json", "wt") as fp:
+    with open("cso.json", "wt") as fp:
         print(json.dumps(getAll(dataset)), file=fp)
 
 def getAll(dataset):   
@@ -36,7 +36,6 @@ def getFormatted(dataset):
         result[label0]={}
         #print(label0)
         
-        #print("~"+label0)
         for dim1 in range(0, sizes[1]): # dimension 1 - ["TList(A1)"]["category"]["label"][index]
             currentId = ids[1]
             index = dimensions[currentId]["category"]["index"][dim1]
@@ -51,32 +50,52 @@ def getFormatted(dataset):
                 #print("\t\t",label2)
                 result[label0][label1][label2]={}
            
-                for dim3 in range(0, sizes[3]): # dimension 3 - ["C03788V04538"]["category"]["label"][index]
+                for dim3 in range(0, sizes[3]): # dimension 3 - ["C03685V04428"]["category"]["label"][index]
                     currentId = ids[3]
                     index = dimensions[currentId]["category"]["index"][dim3]
                     label3 = dimensions[currentId]["category"]["label"][index]
                     #print("\t\t\t",label3, " ", values[valuecount])
                     result[label0][label1][label2][label3]= values[valuecount]
                     valuecount+=1
-
-    print(result)    
+                    
+    #print(result)    
     return result
     
 if __name__ == "__main__":
-    #getAllAsFile("HEO14")
+    # HEO14
+    # EDA99
+  #  getAllAsFile("HEO14")
     getFormattedAsFile("HEO14")
 
-    data = getAll("HEO14")
+  #  data = getAll("HEO14")
+    data = getFormatted("HEO14")
+ #   for key, value in data.items():
+ #       print("Key-> "+key + " ~VAL~ ")
+ #       for x in value:
+ #           print("Next: "+x+"~~")
+ #           for y in x:
+ #               print(y)
+ #               input()
 
-    for entry in data:
-        #valuationReports = entry["ValuationReport"]
-        statReport = entry["STATISTIC"]
-        print(statReport)
-        #for valuationReport in valuationReports:
+    #print("~~~~~~~~~")
+
+    print("~~~~~~~~~")
+
+    print(data)
+    print("~~~~~~~~~")
+    #print(list(data.values())[0])
+    #print("~~~~~~~~~")
+
+  #  for entry in data:
+     #   valuationReports = entry["Number of Graduates"]
+     #   statReport = entry["2010"]
+     #   print(entry)
+     #   input()
+     #   for valuationReport in valuationReports:
             #print(valuationReport)
-         #   if valuationReport["FloorUse"] == "HAIR SALON":
+      #      if valuationReport["FloorUse"] == "HAIR SALON":
           #      print (valuationReport["Area"],"+", totalArea,"=", end="")
                 #totalArea += valuationReport["Area"]
                 #print(totalArea)
 
-    print (totalArea)
+    #print (totalArea)
