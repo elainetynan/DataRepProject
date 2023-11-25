@@ -68,7 +68,7 @@ if __name__ == "__main__":
     getFormattedAsFile("HEO14")
 
   #  data = getAll("HEO14")
-    data = getFormatted("HEO14")
+    data = getFormatted("HEO14") # number of graduates
  #   for key, value in data.items():
  #       print("Key-> "+key + " ~VAL~ ")
  #       for x in value:
