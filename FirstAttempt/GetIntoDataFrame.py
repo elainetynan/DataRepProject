@@ -30,6 +30,13 @@ def getFormatted(dataset):
     sizes = data["size"]
     valuecount = 0
     result = {}
+
+    col1 = dimensions["TLIST(A1)"]["label"]
+    col2 = dimensions["C03428V04135"]["label"]
+    col3 = dimensions["C03427V04134"]["label"]
+    col4 = dimensions["C03685V04428"]["label"]
+    col5 = dimensions["STATISTIC"]["category"]["label"]["HEO14C01"]
+    df = pd.DataFrame(columns=[col1, col2, col3, col4, col5])
     
     for dim0 in range(0, sizes[0]): # dimension 0 - ["Statistic"]["category"]["label"][index]
         currentId = ids[0] # currentId = STATISTIC
@@ -67,47 +74,24 @@ def getFormatted(dataset):
                         result[label0][label1][label2][label3][label4]= int(values[valuecount])
                         
                         db_values = (label1, label2, label3, label4, int(values[valuecount]) )
-                        GraduatesDAO.create(db_values)
+                        df.loc[len(df)] = [label1, label2, label3, label4, int(values[valuecount])]
+                        #GraduatesDAO.create(db_values)
 
                         valuecount+=1
-    #print(result)    
+    cleanData(df)
+    print(df.head())
     return result
+
+def cleanData(df):
+    # Replace spaces in column names with underscores as it causes problems.
+    df.columns = [c.replace(' ', '_') for c in df.columns]
+
+   # Remove duplicate (aggregate) rows and records that have no graduates
+    df.drop(df[df['Institutions'] == "All Institutions"].index, inplace = True)
+    df.drop(df[df['Field_of_Study'] == "All fields of education"].index, inplace = True)
+    df.drop(df[df['NFQ_Level'] == "All NFQ Levels"].index, inplace = True)
+    df.drop(df[df['Number_of_Graduates'] == 0].index, inplace = True)
     
 if __name__ == "__main__":
-    # HEO14
-    # EDA99
   #  getAllAsFile("HEO14")
     getFormattedAsFile("HEO14")
-
-  #  data = getAll("HEO14")
- #   data = getFormatted("HEO14") # number of graduates
- #   for key, value in data.items():
- #       print("Key-> "+key + " ~VAL~ ")
- #       for x in value:
- #           print("Next: "+x+"~~")
- #           for y in x:
- #               print(y)
- #               input()
-
-    #print("~~~~~~~~~")
-
- #  print("~~~~~~~~~")
-
- #   print(data)
- #   print("~~~~~~~~~")
-    #print(list(data.values())[0])
-    #print("~~~~~~~~~")
-
-  #  for entry in data:
-     #   valuationReports = entry["Number of Graduates"]
-     #   statReport = entry["2010"]
-     #   print(entry)
-     #   input()
-     #   for valuationReport in valuationReports:
-            #print(valuationReport)
-      #      if valuationReport["FloorUse"] == "HAIR SALON":
-          #      print (valuationReport["Area"],"+", totalArea,"=", end="")
-                #totalArea += valuationReport["Area"]
-                #print(totalArea)
-
-    #print (totalArea)
