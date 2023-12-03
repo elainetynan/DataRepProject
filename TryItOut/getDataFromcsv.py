@@ -108,7 +108,8 @@ for val in uniqueInstitutions:
 
 
 print(df)
-
+#column_headers = list(df.columns.values)
+print("The Column Header :", list(df.columns.values))
 
 # Now create the table
 cursor.execute("""

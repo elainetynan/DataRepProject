@@ -31,7 +31,8 @@ class GraduatesDAO:
          
     def create(self, values):
         cursor = self.getcursor()
-        sql="insert into graduates (GraduationYear, FieldOfStudy, NFQ_Level, Institution, NumGraduates) values (%s,%s,%s,%s,%s)"
+        # ET: need to check if all foreign keys exist, if not create record, return foreign key
+        sql="insert into graduates (Institution, GraduationYear, FieldOfStudy, NFQ_Level, NumGraduates) values (%s,%s,%s,%s,%s)"
         cursor.execute(sql, values)
 
         self.connection.commit()
@@ -41,6 +42,7 @@ class GraduatesDAO:
 
     def getAll(self):
         cursor = self.getcursor()
+        # ET: Join tables
         sql="select * from graduates"
         cursor.execute(sql)
         results = cursor.fetchall()
@@ -55,6 +57,7 @@ class GraduatesDAO:
 
     def findByID(self, id):
         cursor = self.getcursor()
+        # ET: Join tables
         sql="select * from graduates where id = %s"
         values = (id,)
 
@@ -66,6 +69,7 @@ class GraduatesDAO:
 
     def update(self, values):
         cursor = self.getcursor()
+        # ET: update all tables
         sql="update graduates set Institution= %s,GraduationYear=%s, FieldOfStudy=%s, NFQ_Level=%s, NumGraduates=%s where id = %s"
         cursor.execute(sql, values)
         self.connection.commit()
@@ -73,6 +77,7 @@ class GraduatesDAO:
         
     def delete(self, id):
         cursor = self.getcursor()
+        # ET: This doesn't change
         sql="delete from graduates where id = %s"
         values = (id,)
 

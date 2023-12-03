@@ -1,7 +1,7 @@
 from ast import Pass
 import requests
 import json
-from GraduatesDAO import GraduatesDAO
+#from GraduatesDAO import GraduatesDAO
 import pandas as pd
 
 
@@ -19,9 +19,10 @@ def getAll(dataset):
 
 def getFormattedAsFile(dataset):
     with open("cso-formatted.json", "wt") as fp:
-        print(json.dumps(getFormatted(dataset)), file=fp)
+        result, df = getFormatted(dataset)
+        print(json.dumps(result), file=fp)
   
-
+# Create the formatted JSON file and the dtaframe.
 def getFormatted(dataset):
     data = getAll(dataset)
     ids = data["id"]
@@ -45,42 +46,38 @@ def getFormatted(dataset):
         result[label0]={}
         #print(label0)
         
-        for dim1 in range(0, sizes[1]): # dimension 1 - ["TList(A1)"]["category"]["label"][index]
+        for dim1 in range(0, sizes[1]): # dimension 1
             currentId = ids[1]
             index = dimensions[currentId]["category"]["index"][dim1]
             label1 = dimensions[currentId]["category"]["label"][index]
             #print("\t",label1)
             result[label0][label1]={}
             
-            for dim2 in range(0, sizes[2]): # dimension 2 - ["C02199V02655"]["category"]["label"][index]
+            for dim2 in range(0, sizes[2]): # dimension 2
                 currentId = ids[2]
                 index = dimensions[currentId]["category"]["index"][dim2]
                 label2 = dimensions[currentId]["category"]["label"][index]
                 #print("\t\t",label2)
                 result[label0][label1][label2]={}
 
-                for dim3 in range(0, sizes[3]): # dimension 3 - ["C03685V04428"]["category"]["label"][index]
+                for dim3 in range(0, sizes[3]): # dimension 3
                     currentId = ids[3]
                     index = dimensions[currentId]["category"]["index"][dim3]
                     label3 = dimensions[currentId]["category"]["label"][index]
                     #print("\t\t\t",label3)
                     result[label0][label1][label2][label3]={}
            
-                    for dim4 in range(0, sizes[4]):
+                    for dim4 in range(0, sizes[4]): # dimension 4
                         currentId = ids[4]
                         index = dimensions[currentId]["category"]["index"][dim4]
                         label4 = dimensions[currentId]["category"]["label"][index]
                         #print("\t\t\t",label4, " ", values[valuecount])
                         result[label0][label1][label2][label3][label4]= int(values[valuecount])
                         
-                        #db_values = (label1, label2, label3, label4, int(values[valuecount]) )
-                        #GraduatesDAO.create(db_values)
                         df.loc[len(df)] = [label1, label2, label3, label4, int(values[valuecount])]
 
                         valuecount+=1
-    cleanData(df)
-    print(df.head())
-    return result
+    return result, df
 
 def cleanData(df):
     # Replace spaces in column names with underscores as it causes problems.
@@ -93,5 +90,8 @@ def cleanData(df):
     df.drop(df[df['Number_of_Graduates'] == 0].index, inplace = True)
     
 if __name__ == "__main__":
-  #  getAllAsFile("HEO14")
-    getFormattedAsFile("HEO14")
+    #getFormattedAsFile("HEO14")
+    #getAllAsFile("HEO14")
+    result, df = getFormatted("HEO14")
+    cleanData(df)
+    print(df.head())

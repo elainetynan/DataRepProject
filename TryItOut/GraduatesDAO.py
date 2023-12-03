@@ -1,5 +1,6 @@
 import mysql.connector
 import dbconfig as cfg
+
 class GraduatesDAO:
     connection=""
     cursor =''
