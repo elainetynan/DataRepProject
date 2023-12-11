@@ -43,14 +43,7 @@ class GraduatesDAO:
     def getAll(self):
         cursor = self.getcursor()
         # ET: Join tables
-        #sql="select * from graduates"
-        sql = "SELECT institutions.Institutions, field_of_study.Field_of_study, nfq_level.NFQ_Level,\
-            graduation_year.Graduation_Year, graduates.NumGraduates FROM graduates \
-                LEFT JOIN institutions ON graduates.Institution = institutions.id \
-                    LEFT JOIN field_of_study ON graduates.FieldOfStudy = field_of_study.id \
-                        LEFT JOIN nfq_level ON graduates. NFQ_Level = nfq_level.id \
-                            LEFT JOIN graduation_year ON graduates. GraduationYear = graduation_year.id"
-
+        sql="select * from graduates"
         cursor.execute(sql)
         results = cursor.fetchall()
         returnArray = []
@@ -65,14 +58,7 @@ class GraduatesDAO:
     def findByID(self, id):
         cursor = self.getcursor()
         # ET: Join tables
-        #sql="select * from graduates where id = %s"
-        sql = "SELECT institutions.Institutions, field_of_study.Field_of_study, nfq_level.NFQ_Level,\
-            graduation_year.Graduation_Year, graduates.NumGraduates FROM graduates \
-                LEFT JOIN institutions ON graduates.Institution = institutions.id \
-                    LEFT JOIN field_of_study ON graduates.FieldOfStudy = field_of_study.id \
-                        LEFT JOIN nfq_level ON graduates. NFQ_Level = nfq_level.id \
-                            LEFT JOIN graduation_year ON graduates. GraduationYear = graduation_year.id \
-                                WHERE graduates.id = %s"
+        sql="select * from graduates where id = %s"
         values = (id,)
 
         cursor.execute(sql, values)

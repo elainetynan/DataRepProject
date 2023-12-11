@@ -89,7 +89,7 @@ ConvertDataToForeignKeys(uniqueYear, "Graduation_Year", df, "Graduation_Year")
 #print("The Column Headers :", list(df.columns.values))
 
 ###
-# Now create the Datavtable
+# Now create the Data table
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS Graduates (
         id INT AUTO_INCREMENT PRIMARY KEY,
