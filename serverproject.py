@@ -9,6 +9,7 @@ app = Flask(__name__, static_url_path='', static_folder='.')
 #def index():
 #    return "Hello, World!"
 
+# Get all Graduates
 #curl "http://127.0.0.1:5000/grads"
 @app.route('/grads')
 def getAll():
@@ -16,6 +17,7 @@ def getAll():
     results = GraduatesDAO.getAll()
     return jsonify(results)
 
+# Get graduates by ID
 #curl "http://127.0.0.1:5000/grads/2"
 @app.route('/grads/<int:id>')
 def findById(id):
@@ -23,6 +25,7 @@ def findById(id):
 
     return jsonify(foundData)
 
+# Insert a graduate to database
 #curl  -i -H "Content-Type:application/json" -X POST -d "{\"Institution\":\"hello\",\"GraduationYear\":\"someone\",\"NumGraduates\":123}" http://127.0.0.1:5000/grads
 @app.route('/grads', methods=['POST'])
 def create():
@@ -42,6 +45,7 @@ def create():
     data['id'] = newId
     return jsonify(data)
 
+# Edit a graduate
 #curl  -i -H "Content-Type:application/json" -X PUT -d "{\"Institution\":\"hello\",\"GraduationYear\":\"someone\",\"NumGraduates\":123}" http://127.0.0.1:5000/grads/1
 @app.route('/grads/<int:id>', methods=['PUT'])
 def update(id):
@@ -73,7 +77,7 @@ def update(id):
         
 
     
-
+# Delete a graduate
 @app.route('/grads/<int:id>' , methods=['DELETE'])
 def delete(id):
     GraduatesDAO.delete(id)
