@@ -289,6 +289,9 @@
                 },
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);
+                    alert("Cannot add a duplicate row based on Institution, Graduation Year, Field of Study and NFQ Level")
+                    clearForm()
+                    showViewAll()
                 }
             });
         }

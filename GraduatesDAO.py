@@ -1,5 +1,6 @@
 import mysql.connector
 import dbconfig as cfg
+from mysql.connector import errorcode
 
 class GraduatesDAO:
     connection=""
@@ -28,42 +29,80 @@ class GraduatesDAO:
     def closeAll(self):
         self.connection.close()
         self.cursor.close()
+        
+    def checkEntryExists(self, table, field, val, cursor):
+        sql = "SELECT id FROM "+table+" WHERE "+table+"."+field+" = %s"
+        values = (val,)
+
+        cursor.execute(sql, values)
+        result = cursor.fetchone()
+        #returnvalue = self.convertToDictionary(result)
+        return result
          
     def create(self, values):
         cursor = self.getcursor()
-        # ET: need to check if all foreign keys exist, if not create record, return foreign key
-        sql="insert into institutions (Institutions) values (%s)"
-        vals = (values[0])
-        cursor.execute(sql, vals) # Institution
-        institutionID = cursor.lastrowid
-        sql="insert into graduation_year (GraduationYear) values (%s)"
-        cursor.execute(sql, values[1]) # Graduation Year
-        yearID = cursor.lastrowid
-        sql="insert into field_of_study (Field_Of_Study) values (%s)"
-        cursor.execute(sql, values[2]) # Field of Study
-        fieldID = cursor.lastrowid
-        sql="insert into nfq_level (NFQ_Level) values (%s)"
-        cursor.execute(sql, values[3]) # Field of Study
-        nfqID = cursor.lastrowid
-        values = (institutionID, yearID, fieldID, nfqID, values[4])
-        sql="insert into graduates (Institution, GraduationYear, FieldOfStudy, NFQ_Level, NumGraduates) values (%s,%s,%s,%s,%s)"
-        cursor.execute(sql, values)
+        # Need to check if all foreign keys exist, if not create record, return foreign key
+        foundData = self.checkEntryExists("institutions", "Institutions", values[0], cursor)
+        if not foundData:
+            sql="insert into institutions (Institutions) values (%s)"
+            vals = (values[0],)
+            cursor.execute(sql, vals) # Institution
+            institutionID = cursor.lastrowid
+        else:
+            institutionID = foundData[0]
+        
+        foundData = self.checkEntryExists("graduationYear", "GraduationYear", values[1], cursor)
+        if not foundData:
+            sql="insert into graduationYear (GraduationYear) values (%s)"
+            vals = (values[1],)
+            cursor.execute(sql, vals) # GraduationYear
+            yearID = cursor.lastrowid
+        else:
+            yearID = foundData[0]
+            
+        foundData = self.checkEntryExists("fieldofstudy", "FieldOfStudy", values[2], cursor)
+        if not foundData:
+            sql="insert into fieldofstudy (FieldOfStudy) values (%s)"
+            vals = (values[2],)
+            cursor.execute(sql, vals) # FieldOfStudy
+            fieldID = cursor.lastrowid
+        else:
+            fieldID = foundData[0]
 
-        self.connection.commit()
-        newid = cursor.lastrowid
-        self.closeAll()
-        return newid
+        foundData = self.checkEntryExists("nfq_level", "NFQLevel", values[3], cursor)
+        if not foundData:
+            sql="insert into nfq_level (NFQLevel) values (%s)"
+            vals = (values[3],)
+            cursor.execute(sql, vals) # NFQLevel
+            nfqID = cursor.lastrowid
+        else:
+            nfqID = foundData[0]
+
+        try:
+            values = (institutionID, yearID, fieldID, nfqID, values[4])
+            sql="insert into graduates (Institution, GraduationYear, FieldOfStudy, NFQ_Level, NumGraduates) values (%s,%s,%s,%s,%s)"
+            cursor.execute(sql, values)
+
+            self.connection.commit()
+            newid = cursor.lastrowid
+            self.closeAll()
+            return newid
+        except mysql.connector.Error as e:
+            if e.errno == errorcode.ER_DUP_ENTRY:
+                return -1
+        finally:
+            # Close the cursor and connection
+            self.closeAll()
 
     def getAll(self):
         cursor = self.getcursor()
-        # ET: Join tables
-        #sql="select * from graduates"
-        sql = "SELECT graduates.id, institutions.Institutions, graduation_year.Graduation_Year, \
-            field_of_study.Field_of_study, nfq_level.NFQ_Level, graduates.NumGraduates \
+        # Join tables
+        sql = "SELECT graduates.id, institutions.Institutions, graduationyear.GraduationYear, \
+            fieldofstudy.FieldOfStudy, nfq_level.NFQLevel, graduates.NumGraduates \
                 FROM graduates LEFT JOIN institutions ON graduates.Institution = institutions.id \
-                        LEFT JOIN field_of_study ON graduates.FieldOfStudy = field_of_study.id \
-                            LEFT JOIN nfq_level ON graduates. NFQ_Level = nfq_level.id \
-                                LEFT JOIN graduation_year ON graduates. GraduationYear = graduation_year.id"
+                        LEFT JOIN fieldofstudy ON graduates.FieldOfStudy = fieldofstudy.id \
+                            LEFT JOIN nfq_level ON graduates.NFQ_Level = nfq_level.id \
+                                LEFT JOIN graduationyear ON graduates.GraduationYear = graduationyear.id"
 
         cursor.execute(sql)
         results = cursor.fetchall()
@@ -78,14 +117,13 @@ class GraduatesDAO:
 
     def findByID(self, id):
         cursor = self.getcursor()
-        # ET: Join tables
-        #sql="select * from graduates where id = %s"
+        # Join tables
         sql = "SELECT graduates.id, institutions.Institutions, graduation_year.Graduation_Year, \
             field_of_study.Field_of_study, nfq_level.NFQ_Level,graduates.NumGraduates \
                 FROM graduates LEFT JOIN institutions ON graduates.Institution = institutions.id \
-                    LEFT JOIN field_of_study ON graduates.FieldOfStudy = field_of_study.id \
-                        LEFT JOIN nfq_level ON graduates. NFQ_Level = nfq_level.id \
-                            LEFT JOIN graduation_year ON graduates. GraduationYear = graduation_year.id \
+                    LEFT JOIN fieldofstudy ON graduates.FieldOfStudy = fieldofstudy.id \
+                        LEFT JOIN nfq_level ON graduates.NFQ_Level = nfq_level.id \
+                            LEFT JOIN graduationyear ON graduates.GraduationYear = graduationyear.id \
                                 WHERE graduates.id = %s"
         values = (id,)
 
@@ -105,7 +143,6 @@ class GraduatesDAO:
         
     def delete(self, id):
         cursor = self.getcursor()
-        # ET: This doesn't change
         sql="delete from graduates where id = %s"
         values = (id,)
 

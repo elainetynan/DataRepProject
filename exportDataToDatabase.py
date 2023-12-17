@@ -10,7 +10,7 @@ jtd.cleanData(df)
 # Display the first few rows of the dataset & summary statistics
 print("Dataset:")
 print(df.head())
-print(df.describe())
+print("The Column Headers :", list(df.columns.values))
 
 # MariaDB connection parameters
 db_params = {
@@ -31,8 +31,6 @@ def CreateRefTable(tablename, fieldname):
     # Create a reference table in the database
     cursor.execute(sql)
 
-    return ""
-
 # Connect to MariaDB server
 conn = mysql.connector.connect(**db_params)
 cursor = conn.cursor()
@@ -42,32 +40,31 @@ cursor.execute("CREATE DATABASE IF NOT EXISTS datarepproj")
 cursor.execute("USE datarepproj")
 
 ###
-#Create reference tables
-uniqueInstitutions = df.Institutions.unique()
-uniqueFieldStudy = df.Field_of_Study.unique()
-uniqueNFQ = df.NFQ_Level.unique()
-uniqueYear = df.Graduation_Year.unique()
+# Create reference tables
 
 # Create an Institutions table and insert data into it
 CreateRefTable("Institutions", "Institutions")
+uniqueInstitutions = df.Institutions.unique()
 for i in uniqueInstitutions:
     cursor.execute("INSERT INTO Institutions (Institutions) VALUES (%s)", (i,))
 
 # Create a Field of Study table and insert data into it
-CreateRefTable("Field_of_Study", "Field_of_Study")
+CreateRefTable("FieldOfStudy", "FieldOfStudy")
+uniqueFieldStudy = df.FieldofStudy.unique()
 for s in uniqueFieldStudy:
-    cursor.execute("INSERT INTO Field_of_Study (Field_of_Study) VALUES (%s)", (s,))
+    cursor.execute("INSERT INTO FieldOfStudy (FieldOfStudy) VALUES (%s)", (s,))
 
 # Create an NFQ table and insert data into it
-CreateRefTable("NFQ_Level", "NFQ_Level")
+CreateRefTable("NFQ_Level", "NFQLevel")
+uniqueNFQ = df.NFQLevel.unique()
 for nfq in uniqueNFQ:
-    cursor.execute("INSERT INTO NFQ_Level (NFQ_Level) VALUES (%s)", (nfq,))
+    cursor.execute("INSERT INTO NFQ_Level (NFQLevel) VALUES (%s)", (nfq,))
 
 # Create Year of Graduation table and insert data into it
-CreateRefTable("Graduation_Year", "Graduation_Year")
+CreateRefTable("GraduationYear", "GraduationYear")
+uniqueYear = df.GraduationYear.unique()
 for y in uniqueYear:
-    cursor.execute("INSERT INTO Graduation_Year (Graduation_Year) VALUES (%s)", (int(y),))
-
+    cursor.execute("INSERT INTO GraduationYear (GraduationYear) VALUES (%s)", (int(y),))
 
 ###
 # Convert all values in data table to corresponding foreign keys to reference tables
@@ -82,22 +79,22 @@ def ConvertDataToForeignKeys(uniqueList, refTable, df, fieldname):
         df.loc[df[fieldname] == val, fieldname] = result[0]
 
 ConvertDataToForeignKeys(uniqueInstitutions, "Institutions", df, "Institutions")
-ConvertDataToForeignKeys(uniqueFieldStudy, "Field_of_Study", df, "Field_of_Study")
-ConvertDataToForeignKeys(uniqueNFQ, "NFQ_Level", df, "NFQ_Level")
-ConvertDataToForeignKeys(uniqueYear, "Graduation_Year", df, "Graduation_Year")
-#print(df)
-#print("The Column Headers :", list(df.columns.values))
+ConvertDataToForeignKeys(uniqueFieldStudy, "FieldofStudy", df, "FieldofStudy")
+ConvertDataToForeignKeys(uniqueNFQ, "nfq_Level", df, "NFQLevel")
+ConvertDataToForeignKeys(uniqueYear, "GraduationYear", df, "GraduationYear")
 
 ###
 # Now create the Data table
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS Graduates (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        `Institution` TEXT,
+        id INT AUTO_INCREMENT,
+        `Institution` INT,
         `GraduationYear` INT,
-        `FieldOfStudy` TEXT,
-        `NFQ_Level` TEXT,
-        `NumGraduates` INT
+        `FieldOfStudy` INT,
+        `NFQ_Level` INT,
+        `NumGraduates` INT,
+        PRIMARY KEY (Institution, GraduationYear, FieldOfStudy, NFQ_Level),
+        UNIQUE KEY id_inique (id)
     )
 """)
 
@@ -107,7 +104,7 @@ for index, row in df.iterrows():
         INSERT INTO Graduates
         (`Institution`, `GraduationYear`, `FieldOfStudy`, `NFQ_Level`, `NumGraduates`)
         VALUES (%s, %s, %s, %s, %s)
-    """, (row['Institutions'], row['Graduation_Year'], row['Field_of_Study'], row['NFQ_Level'], row['Number_of_Graduates']))
+    """, (row['Institutions'], row['GraduationYear'], row['FieldofStudy'], row['NFQLevel'], row['NumberofGraduates']))
 
 # Commit the changes and close the connection
 conn.commit()
