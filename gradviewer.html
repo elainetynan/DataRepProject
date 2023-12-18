@@ -8,7 +8,14 @@
     </head>
     <body>
         <h1>Number of Graduates</h1>
-        <div><button id="showCreateButton" onclick="showCreate()">Create</button></div>
+        <div><button id="showCreateButton" onclick="showCreate()">Create</button></div><br>
+        <div id="searchDiv">
+            <p>
+                <label for="searchInput" id="searchLabel">Search by Institution</label>
+                <input type="text" id="searchInput" name="searchInput">
+                <button id="searchButton" onclick="SearchByInstitute()">Go</button>
+            </p>
+        </div>
         <div>
             <table class="table" id="gradTable">
                 <tr>
@@ -21,7 +28,6 @@
                     <th>Update</th>
                     <th>Delete</th>
                 </tr>
-                
             </table>
         </div>
         <div id='createUpdateForm' style="display: none">
@@ -59,12 +65,14 @@
             document.getElementById('doUpdateButton').style.display="none";
             document.getElementById('doCancelButton').style.display="block";
 
+            document.getElementById('searchDiv').style.display="none";
         }
 
         function showViewAll(){
             document.getElementById('showCreateButton').style.display="block";
             document.getElementById('showCreateButton2').style.display="block";
             document.getElementById('gradTable').style.display="block";
+            document.getElementById('searchDiv').style.display="block";
             document.getElementById('createUpdateForm').style.display="none";
             document.getElementById('doCancelButton').style.display="none";
         }
@@ -81,6 +89,8 @@
             document.getElementById('doCreateButton').style.display="none";
             document.getElementById('doUpdateButton').style.display="block";
             document.getElementById('doCancelButton').style.display="block";
+            
+            document.getElementById('searchDiv').style.display="none";
 
             var rowElement = buttonElement.parentNode.parentNode;
             // this is a way of finding the closest <tr> which would safer, closest()
@@ -120,6 +130,11 @@
             var index = rowElement.rowIndex;
             deleteDataAjax(rowElement.getAttribute("id"));
             tableElement.deleteRow(index);
+        }
+
+        function clearTable(){
+            var tableElement = document.getElementById('gradTable');
+            $("#gradTable tr").remove();
         }
 
         function addDataToTable(grad){
@@ -213,13 +228,43 @@
                         addDataToTable(grad);
                         //console.log(grad);
                     }
-                    
                 },
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);
                 }
             });
+        }
 
+        function SearchByInstitute(institute){
+            institute = document.getElementById('searchInput').value.trim();
+            if (institute == "") {
+                getAllAjax();
+            } else {
+                getByInstitute(institute);
+                document.getElementById('searchInput').value = "";
+            }
+        }
+
+        function getByInstitute(institute){
+            $.ajax({
+                "url": "http://127.0.0.1:5000/grads/"+encodeURI(institute),
+                "method":"GET",
+                "data":"",
+                "dataType": "JSON",
+                "success":function(result){
+                    //console.log(result);
+                    clearTable();
+                    for (grad of result){
+                        if (grad.id == -1)
+                            break;
+                        addDataToTable(grad);
+                        //console.log(grad);
+                    }
+                },
+                "error":function(xhr,status,error){
+                    console.log("error: "+status+" msg:"+error);
+                }
+            });
         }
 
         function createDataAjax(grad){

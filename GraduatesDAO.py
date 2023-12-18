@@ -133,6 +133,36 @@ class GraduatesDAO:
         self.closeAll()
         return returnvalue
 
+    def getByInstitute(self, institute):
+        cursor = self.getcursor()
+        # Join tables
+        sql = "SELECT graduates.id, institutions.Institutions, graduationyear.GraduationYear, \
+            fieldofstudy.FieldOfStudy, nfqlevel.NFQLevel, graduates.NumGraduates \
+                FROM graduates LEFT JOIN institutions ON graduates.Institution = institutions.id \
+                        LEFT JOIN fieldofstudy ON graduates.FieldOfStudy = fieldofstudy.id \
+                            LEFT JOIN nfqlevel ON graduates.NFQ_Level = nfqlevel.id \
+                                LEFT JOIN graduationyear ON graduates.GraduationYear = graduationyear.id \
+                                    WHERE institutions.Institutions = %s"
+
+        values = (institute,)
+       
+        cursor.execute(sql, values)
+        results = cursor.fetchall()
+        if bool(results):
+            returnArray = []
+            #print(results)
+            for result in results:
+                #print(result)
+                returnArray.append(self.convertToDictionary(result))
+        else:
+            result = (-1,-1,-1,-1,-1,-1)
+            returnArray = []
+            returnArray.append(self.convertToDictionary(result))
+        
+        self.closeAll()
+        return returnArray
+        
+
     def update(self, values):
         cursor = self.getcursor()
         # ET: update all tables

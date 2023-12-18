@@ -18,15 +18,20 @@ def getAll():
     return jsonify(results)
 
 # Get graduates by ID
-#curl "http://127.0.0.1:5000/grads/2"
 @app.route('/grads/<int:id>')
 def findById(id):
     foundData = GraduatesDAO.findByID(id)
 
     return jsonify(foundData)
 
+# Get graduates by Institutes
+@app.route('/grads/<string:institute>')
+def getByInstitute(institute):
+    results = GraduatesDAO.getByInstitute(institute)
+
+    return jsonify(results)
+
 # Insert a graduate to database
-#curl  -i -H "Content-Type:application/json" -X POST -d "{\"Institution\":\"hello\",\"GraduationYear\":\"someone\",\"NumGraduates\":123}" http://127.0.0.1:5000/grads
 @app.route('/grads', methods=['POST'])
 def create():
     
