@@ -4,72 +4,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <style>
-            body {
-                margin: auto;
-                width: 90%;
-            }
-            table tr:nth-child(even) { background-color: silver; }
-            #id { padding: 5px; }
-            h1 {
-                font-family: Papyrus, 'Brush Script MT', cursive;
-                font-weight: bold;
-                font-size: 2em;
-                margin: 10px auto;
-                padding: 5px;
-                text-align: center;
-                color: #132639;
-                border: ridge;
-                border-radius: 10px;
-                width: 50%;
-                max-width: 600px;
-            }
-            th {
-                font-family: Papyrus, 'Brush Script MT', cursive;
-                color: #132639;
-                font-size: 1.25em;
-            }
-            button {
-                font-family: Papyrus, 'Brush Script MT', cursive;
-                color: #132639;
-                font-weight: bold;
-                background-color: #b3cce6;
-                text-align: center;
-                min-width: 100px;
-                border-radius: 5px;
-            }
-            #createUpdateForm {
-                text-align: center;
-                margin: 10px auto;
-                width: 60%;
-                background-color: #e5ecff;
-                padding: 10px 5px;
-            }
-            label {
-                width : 200px;
-                text-align: right;
-                padding-right: 3px 5px;
-            }
-            #cu_header{
-                font-family: Papyrus, 'Brush Script MT', cursive;
-                color: #132639;
-                font-weight: bold;
-                font-size: 1.5em;
-                padding: 5px;
-            }
-            #createUpdateForm input {
-                padding: 5px;
-                margin: 10px;
-            }
-            #createUpdateForm button {
-                margin: 15px auto;
-                padding: 10px;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>Number of Graduates</h1>
-        <div> <button id="showCreateButton" onclick="showCreate()">Create</button></div>
+        <div><button id="showCreateButton" onclick="showCreate()">Create</button></div>
         <div>
             <table class="table" id="gradTable">
                 <tr>
@@ -98,11 +37,18 @@
             <label for="cu_graduates">Number of Graduates</label><input type="number" name="graduates" id="cu_graduates" /><br/>
             <span><button id="doCreateButton" onclick="doCreate()">Create</button></span>
             <span><button id="doUpdateButton" onclick="doUpdate()">Update</button></span>
+            <span><button id="doCancelButton" onclick="window.location.reload()">Cancel</button></span>
+        </div>
+        <div>
+            <p>
+                <button id="showCreateButton2" onclick="showCreate()">Create</button>
+            </p>
         </div>
     </body>
     <script>
         function showCreate(){
             document.getElementById('showCreateButton').style.display="none";
+            document.getElementById('showCreateButton2').style.display="none";
             document.getElementById('gradTable').style.display="none";
             document.getElementById('createUpdateForm').style.display="block";
 
@@ -111,17 +57,21 @@
 
             document.getElementById('doCreateButton').style.display="block";
             document.getElementById('doUpdateButton').style.display="none";
+            document.getElementById('doCancelButton').style.display="block";
 
         }
 
         function showViewAll(){
             document.getElementById('showCreateButton').style.display="block";
+            document.getElementById('showCreateButton2').style.display="block";
             document.getElementById('gradTable').style.display="block";
             document.getElementById('createUpdateForm').style.display="none";
+            document.getElementById('doCancelButton').style.display="none";
         }
 
         function showUpdate(buttonElement){
             document.getElementById('showCreateButton').style.display="none";
+            document.getElementById('showCreateButton2').style.display="none";
             document.getElementById('gradTable').style.display="none";
             document.getElementById('createUpdateForm').style.display="block";
 
@@ -130,6 +80,7 @@
 
             document.getElementById('doCreateButton').style.display="none";
             document.getElementById('doUpdateButton').style.display="block";
+            document.getElementById('doCancelButton').style.display="block";
 
             var rowElement = buttonElement.parentNode.parentNode;
             // this is a way of finding the closest <tr> which would safer, closest()
@@ -272,7 +223,6 @@
         }
 
         function createDataAjax(grad){
-            //var car = {"reg":"12 D 1234","make":"Fiat","model":"Punto","price":3000}
             console.log(JSON.stringify(grad));
             $.ajax({
                 "url": "http://127.0.0.1:5000/grads",
@@ -282,16 +232,17 @@
                 contentType: "application/json; charset=utf-8",
                 "success":function(result){
                     //console.log(result);
-                    grad.id = result.id
-                    addDataToTable(grad)
-                    clearForm()
-                    showViewAll()
+                    grad.id = result.id;
+                    addDataToTable(grad);
+                    clearForm();
+                    showViewAll();
                 },
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);
-                    alert("Cannot add a duplicate row based on Institution, Graduation Year, Field of Study and NFQ Level")
-                    clearForm()
-                    showViewAll()
+                    if (xhr.status == 418) {
+                        console.log("hello")
+                        alert("Duplicate record can not be added based on Institution, year, Field of study and NFQ level.");
+                    }
                 }
             });
         }

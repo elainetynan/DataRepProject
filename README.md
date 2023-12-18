@@ -8,10 +8,15 @@ To create the database and populate it.
 Run the exportDataToDatabase.py python file. This gets the data from the CSO website and populates the database as follows:
 Database: datarepproj
 Main data table:  graduates
+                  Primary key: Institution, GraduationYear, FieldOfStudy & NFQ_Level
+                  Unique Key: id (Auto increment)
+
 Reference tables: fieldOfStudy (graduates.FieldOfStudy <---> fieldOfStudy.id)
                   graduationYear (graduates.GraduationYear <---> graduationYear.id)
                   institutions (graduates.Institutions <---> institutions.id)
                   nfqLevel (graduates.NFQ_Level <---> nfqLevel.id)
+All Reference 
+tables Primary key: id (Auto increment)
 
 The reference tables eliminate duplicate data, which should make the database more efficient.
 
@@ -28,3 +33,23 @@ Go to the ip address /gradviewer.html. E.g., http://127.0.0.1:5000/gradviewer.ht
 
 To see the json format of all the data use /grads. E.g., http://127.0.0.1:5000/grads
 
+To use
+------
+
+Create -->
+A second create button is added to the end of the page. The data can be quite long so this is for ease of use. It  mirrors the functionality of the create button at the top.
+
+Duplicate records will not be allowed. (Key: Institution, GraduationYear, FieldOfStudy & NFQ_Level)
+
+Cancel button added to 'create form' for user friendliness.
+
+
+
+Update -->
+Each record has it's own update button to update that record.
+Cancel button added to 'update form' for user friendliness.
+
+
+
+Delete -->
+Delete is a simply function with each record having it's own delete button to delete that record.

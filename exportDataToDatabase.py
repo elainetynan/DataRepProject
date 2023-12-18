@@ -43,28 +43,28 @@ cursor.execute("USE datarepproj")
 # Create reference tables
 
 # Create an Institutions table and insert data into it
-CreateRefTable("Institutions", "Institutions")
+CreateRefTable("institutions", "Institutions")
 uniqueInstitutions = df.Institutions.unique()
 for i in uniqueInstitutions:
-    cursor.execute("INSERT INTO Institutions (Institutions) VALUES (%s)", (i,))
+    cursor.execute("INSERT INTO institutions (Institutions) VALUES (%s)", (i,))
 
 # Create a Field of Study table and insert data into it
-CreateRefTable("FieldOfStudy", "FieldOfStudy")
+CreateRefTable("fieldofstudy", "FieldOfStudy")
 uniqueFieldStudy = df.FieldofStudy.unique()
 for s in uniqueFieldStudy:
-    cursor.execute("INSERT INTO FieldOfStudy (FieldOfStudy) VALUES (%s)", (s,))
+    cursor.execute("INSERT INTO fieldofstudy (FieldOfStudy) VALUES (%s)", (s,))
 
 # Create an NFQ table and insert data into it
-CreateRefTable("NFQ_Level", "NFQLevel")
+CreateRefTable("nfqlevel", "NFQLevel")
 uniqueNFQ = df.NFQLevel.unique()
 for nfq in uniqueNFQ:
-    cursor.execute("INSERT INTO NFQ_Level (NFQLevel) VALUES (%s)", (nfq,))
+    cursor.execute("INSERT INTO nfqlevel (NFQLevel) VALUES (%s)", (nfq,))
 
 # Create Year of Graduation table and insert data into it
-CreateRefTable("GraduationYear", "GraduationYear")
+CreateRefTable("graduationyear", "GraduationYear")
 uniqueYear = df.GraduationYear.unique()
 for y in uniqueYear:
-    cursor.execute("INSERT INTO GraduationYear (GraduationYear) VALUES (%s)", (int(y),))
+    cursor.execute("INSERT INTO graduationyear (GraduationYear) VALUES (%s)", (int(y),))
 
 ###
 # Convert all values in data table to corresponding foreign keys to reference tables
@@ -78,10 +78,10 @@ def ConvertDataToForeignKeys(uniqueList, refTable, df, fieldname):
         result = cursor.fetchone()
         df.loc[df[fieldname] == val, fieldname] = result[0]
 
-ConvertDataToForeignKeys(uniqueInstitutions, "Institutions", df, "Institutions")
-ConvertDataToForeignKeys(uniqueFieldStudy, "FieldofStudy", df, "FieldofStudy")
-ConvertDataToForeignKeys(uniqueNFQ, "nfq_Level", df, "NFQLevel")
-ConvertDataToForeignKeys(uniqueYear, "GraduationYear", df, "GraduationYear")
+ConvertDataToForeignKeys(uniqueInstitutions, "institutions", df, "Institutions")
+ConvertDataToForeignKeys(uniqueFieldStudy, "fieldofstudy", df, "FieldofStudy")
+ConvertDataToForeignKeys(uniqueNFQ, "nfqLevel", df, "NFQLevel")
+ConvertDataToForeignKeys(uniqueYear, "graduationyear", df, "GraduationYear")
 
 ###
 # Now create the Data table

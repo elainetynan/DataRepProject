@@ -1,0 +1,60 @@
+body {
+    margin: auto;
+    width: 90%;
+}
+table tr:nth-child(even) { background-color: silver; }
+#id { padding: 5px; }
+h1 {
+    font-family: Papyrus, 'Brush Script MT', cursive;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    color: #132639;
+    border: ridge;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+}
+th {
+    font-family: Papyrus, 'Brush Script MT', cursive;
+    color: #132639;
+    font-size: 1.25em;
+}
+button {
+    font-family: Papyrus, 'Brush Script MT', cursive;
+    color: #132639;
+    font-weight: bold;
+    background-color: #b3cce6;
+    text-align: center;
+    min-width: 100px;
+    border-radius: 5px;
+}
+#createUpdateForm {
+    text-align: center;
+    margin: 10px auto;
+    width: 60%;
+    background-color: #e5ecff;
+    padding: 10px 5px;
+}
+label {
+    width : 200px;
+    text-align: right;
+    padding-right: 3px 5px;
+}
+#cu_header{
+    font-family: Papyrus, 'Brush Script MT', cursive;
+    color: #132639;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 5px;
+}
+#createUpdateForm input {
+    padding: 5px;
+    margin: 10px;
+}
+#createUpdateForm button {
+    margin: 15px auto;
+    padding: 10px;
+}

@@ -41,12 +41,12 @@ def create():
         "NumGraduates": request.json['NumGraduates'],
     }
     values =(data['Institution'],data['GraduationYear'],data['FieldOfStudy'],data['NFQ_Level'],data['NumGraduates'])
-    newId = GraduatesDAO.create(values)
-    if id != -1:
+    try:
+        newId = GraduatesDAO.create(values)
         data['id'] = newId
         return jsonify(data)
-    else:
-        abort(418)
+    except Exception as e:
+        abort(418) # I'm a teapot
 
 # Edit a graduate
 # curl  -i -H "Content-Type:application/json" -X PUT -d "{\"Institution\":\"hello\",\"GraduationYear\":\"someone\",\"NumGraduates\":123}" http://127.0.0.1:5000/grads/1

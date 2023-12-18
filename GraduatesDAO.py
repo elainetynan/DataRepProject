@@ -69,9 +69,9 @@ class GraduatesDAO:
         else:
             fieldID = foundData[0]
 
-        foundData = self.checkEntryExists("nfq_level", "NFQLevel", values[3], cursor)
+        foundData = self.checkEntryExists("nfqlevel", "NFQLevel", values[3], cursor)
         if not foundData:
-            sql="insert into nfq_level (NFQLevel) values (%s)"
+            sql="insert into nfqlevel (NFQLevel) values (%s)"
             vals = (values[3],)
             cursor.execute(sql, vals) # NFQLevel
             nfqID = cursor.lastrowid
@@ -89,7 +89,7 @@ class GraduatesDAO:
             return newid
         except mysql.connector.Error as e:
             if e.errno == errorcode.ER_DUP_ENTRY:
-                return -1
+                raise Exception("Duplicate Record")
         finally:
             # Close the cursor and connection
             self.closeAll()
@@ -98,10 +98,10 @@ class GraduatesDAO:
         cursor = self.getcursor()
         # Join tables
         sql = "SELECT graduates.id, institutions.Institutions, graduationyear.GraduationYear, \
-            fieldofstudy.FieldOfStudy, nfq_level.NFQLevel, graduates.NumGraduates \
+            fieldofstudy.FieldOfStudy, nfqlevel.NFQLevel, graduates.NumGraduates \
                 FROM graduates LEFT JOIN institutions ON graduates.Institution = institutions.id \
                         LEFT JOIN fieldofstudy ON graduates.FieldOfStudy = fieldofstudy.id \
-                            LEFT JOIN nfq_level ON graduates.NFQ_Level = nfq_level.id \
+                            LEFT JOIN nfqlevel ON graduates.NFQ_Level = nfqlevel.id \
                                 LEFT JOIN graduationyear ON graduates.GraduationYear = graduationyear.id"
 
         cursor.execute(sql)
@@ -118,11 +118,11 @@ class GraduatesDAO:
     def findByID(self, id):
         cursor = self.getcursor()
         # Join tables
-        sql = "SELECT graduates.id, institutions.Institutions, graduation_year.Graduation_Year, \
-            field_of_study.Field_of_study, nfq_level.NFQ_Level,graduates.NumGraduates \
+        sql = "SELECT graduates.id, institutions.Institutions, graduationyear.GraduationYear, \
+            fieldofstudy.FieldOfStudy, nfqlevel.NFQLevel,graduates.NumGraduates \
                 FROM graduates LEFT JOIN institutions ON graduates.Institution = institutions.id \
                     LEFT JOIN fieldofstudy ON graduates.FieldOfStudy = fieldofstudy.id \
-                        LEFT JOIN nfq_level ON graduates.NFQ_Level = nfq_level.id \
+                        LEFT JOIN nfqlevel ON graduates.NFQ_Level = nfqlevel.id \
                             LEFT JOIN graduationyear ON graduates.GraduationYear = graduationyear.id \
                                 WHERE graduates.id = %s"
         values = (id,)
