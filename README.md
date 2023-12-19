@@ -1,10 +1,21 @@
 # DataRepProject
 Project for Data Representation 2023
 
-Ensure Wamp/Xampp server is running
+dbconfig.py file includes:
+
+mysql = {
+    'host':"localhost",
+    'user':"root",
+    'password':"",
+    'database':"datarepproj"
+}
+
 
 To create the database and populate it.
 ---------------------------------------
+
+Ensure Wamp/Xampp server is running
+
 Run the exportDataToDatabase.py python file. This gets the data from the CSO website and populates the database as follows:
 Database: datarepproj
 Main data table:  graduates
