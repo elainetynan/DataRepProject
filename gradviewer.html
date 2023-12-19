@@ -219,7 +219,7 @@
 
         function getAllAjax(){
             $.ajax({
-                "url": "http://127.0.0.1:5000/grads",
+                "url": "/grads",
                 "method":"GET",
                 "data":"",
                 "dataType": "JSON",
@@ -248,7 +248,7 @@
 
         function getByInstitute(institute){
             $.ajax({
-                "url": "http://127.0.0.1:5000/grads/"+encodeURI(institute),
+                "url": "/grads/"+encodeURI(institute),
                 "method":"GET",
                 "data":"",
                 "dataType": "JSON",
@@ -271,7 +271,7 @@
         function createDataAjax(grad){
             console.log(JSON.stringify(grad));
             $.ajax({
-                "url": "http://127.0.0.1:5000/grads",
+                "url": "/grads",
                 "method":"POST",
                 "data":JSON.stringify(grad),
                 "dataType": "JSON",
@@ -297,7 +297,7 @@
         function updateDataAjax(grad){
             console.log(JSON.stringify(grad));
             $.ajax({
-                "url": "http://127.0.0.1:5000/grads/"+encodeURI(grad.id),
+                "url": "/grads/"+encodeURI(grad.id),
                 "method":"PUT",
                 "data":JSON.stringify(grad),
                 "dataType": "JSON",
@@ -314,7 +314,7 @@
         function deleteDataAjax(id){
             //console.log(JSON.stringify('deleting '+id));
             $.ajax({
-                "url": "http://127.0.0.1:5000/grads/"+encodeURI(id),
+                "url": "/grads/"+encodeURI(id),
                 "method":"DELETE",
                 "data":"",
                 "dataType": "JSON",
