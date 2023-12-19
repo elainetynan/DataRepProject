@@ -14,6 +14,7 @@
                 <label for="searchInput" id="searchLabel">Search by Institution</label>
                 <input type="text" id="searchInput" name="searchInput">
                 <button id="searchButton" onclick="SearchByInstitute()">Go</button>
+                <button id="clearSearchButton" onclick="getAllAjax()">Clear Search</button>
             </p>
         </div>
         <div>
@@ -285,7 +286,8 @@
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);
                     if (xhr.status == 418) {
-                        console.log("hello")
+                        console.log("hello");
+                        console.log(grad);
                         alert("Duplicate record can not be added based on Institution, year, Field of study and NFQ level.");
                     }
                 }
@@ -301,8 +303,7 @@
                 "dataType": "JSON",
                 contentType: "application/json; charset=utf-8",
                 "success":function(result){
-                // console.log(result);
-                    
+                    // console.log(result);
                 },
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);
@@ -320,7 +321,6 @@
                 contentType: "application/json; charset=utf-8",
                 "success":function(result){
                     //console.log(result);
-                    
                 },
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);

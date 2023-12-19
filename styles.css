@@ -58,7 +58,8 @@ button {
     margin: 15px auto;
     padding: 10px;
 }
-#searchDiv {
+#searchInput {
     font-family: Papyrus, 'Brush Script MT', cursive;
+    font-weight: bold;
     padding: 5px;
 }

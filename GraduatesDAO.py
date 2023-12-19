@@ -38,51 +38,31 @@ class GraduatesDAO:
         result = cursor.fetchone()
         #returnvalue = self.convertToDictionary(result)
         return result
+
+    # Get reference table id or create new record and return new id
+    def getRefTableId(self, table, field, val, cursor):
+        foundData = self.checkEntryExists(table, field, val, cursor)
+        if not foundData:
+            sql="insert into "+table+" ("+field+") values (%s)"
+            vals = (val,)
+            cursor.execute(sql, vals)
+            id = cursor.lastrowid
+        else:
+            id = foundData[0]
+        return id
          
     def create(self, values):
         cursor = self.getcursor()
         # Need to check if all foreign keys exist, if not create record, return foreign key
-        foundData = self.checkEntryExists("institutions", "Institutions", values[0], cursor)
-        if not foundData:
-            sql="insert into institutions (Institutions) values (%s)"
-            vals = (values[0],)
-            cursor.execute(sql, vals) # Institution
-            institutionID = cursor.lastrowid
-        else:
-            institutionID = foundData[0]
-        
-        foundData = self.checkEntryExists("graduationYear", "GraduationYear", values[1], cursor)
-        if not foundData:
-            sql="insert into graduationYear (GraduationYear) values (%s)"
-            vals = (values[1],)
-            cursor.execute(sql, vals) # GraduationYear
-            yearID = cursor.lastrowid
-        else:
-            yearID = foundData[0]
-            
-        foundData = self.checkEntryExists("fieldofstudy", "FieldOfStudy", values[2], cursor)
-        if not foundData:
-            sql="insert into fieldofstudy (FieldOfStudy) values (%s)"
-            vals = (values[2],)
-            cursor.execute(sql, vals) # FieldOfStudy
-            fieldID = cursor.lastrowid
-        else:
-            fieldID = foundData[0]
-
-        foundData = self.checkEntryExists("nfqlevel", "NFQLevel", values[3], cursor)
-        if not foundData:
-            sql="insert into nfqlevel (NFQLevel) values (%s)"
-            vals = (values[3],)
-            cursor.execute(sql, vals) # NFQLevel
-            nfqID = cursor.lastrowid
-        else:
-            nfqID = foundData[0]
+        institutionID = self.getRefTableId("institutions", "Institutions", values[0], cursor)
+        yearID = self.getRefTableId("graduationYear", "GraduationYear", values[1], cursor)
+        fieldID = self.getRefTableId("fieldofstudy", "FieldOfStudy", values[2], cursor)
+        nfqID = self.getRefTableId("nfqlevel", "NFQLevel", values[3], cursor)
 
         try:
             values = (institutionID, yearID, fieldID, nfqID, values[4])
             sql="insert into graduates (Institution, GraduationYear, FieldOfStudy, NFQ_Level, NumGraduates) values (%s,%s,%s,%s,%s)"
             cursor.execute(sql, values)
-
             self.connection.commit()
             newid = cursor.lastrowid
             self.closeAll()
@@ -107,7 +87,6 @@ class GraduatesDAO:
         cursor.execute(sql)
         results = cursor.fetchall()
         returnArray = []
-        #print(results)
         for result in results:
             #print(result)
             returnArray.append(self.convertToDictionary(result))
@@ -150,7 +129,6 @@ class GraduatesDAO:
         results = cursor.fetchall()
         if bool(results):
             returnArray = []
-            #print(results)
             for result in results:
                 #print(result)
                 returnArray.append(self.convertToDictionary(result))
@@ -165,9 +143,16 @@ class GraduatesDAO:
 
     def update(self, values):
         cursor = self.getcursor()
-        # ET: update all tables
+        # Need to check if all foreign keys exist, if not create record, return foreign key
+        institutionID = self.getRefTableId("institutions", "Institutions", values[0], cursor)
+        yearID = self.getRefTableId("graduationYear", "GraduationYear", values[1], cursor)
+        fieldID = self.getRefTableId("fieldofstudy", "FieldOfStudy", values[2], cursor)
+        nfqID = self.getRefTableId("nfqlevel", "NFQLevel", values[3], cursor)
+
+        # Update main table
         sql="update graduates set Institution= %s,GraduationYear=%s, FieldOfStudy=%s, NFQ_Level=%s, NumGraduates=%s where id = %s"
-        cursor.execute(sql, values)
+        vals = (institutionID, yearID, fieldID, nfqID, values[4], values[5])
+        cursor.execute(sql, vals)
         self.connection.commit()
         self.closeAll()
         
@@ -175,12 +160,10 @@ class GraduatesDAO:
         cursor = self.getcursor()
         sql="delete from graduates where id = %s"
         values = (id,)
-
         cursor.execute(sql, values)
 
         self.connection.commit()
         self.closeAll()
-        
         print("delete done")
 
     def convertToDictionary(self, result):

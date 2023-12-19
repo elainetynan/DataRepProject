@@ -13,7 +13,6 @@ app = Flask(__name__, static_url_path='', static_folder='.')
 #curl "http://127.0.0.1:5000/grads"
 @app.route('/grads')
 def getAll():
-    #print("in getall")
     results = GraduatesDAO.getAll()
     return jsonify(results)
 
@@ -64,14 +63,6 @@ def update(id):
     if not request.json:
         abort(400)
     reqJson = request.json
-    if 'Institution' in reqJson and type(reqJson['Institution']) is not int:
-        abort(400)
-    if 'GraduationYear' in reqJson and type(reqJson['GraduationYear']) is not int:
-        abort(400)
-    if 'FieldOfStudy' in reqJson and type(reqJson['FieldOfStudy']) is not int:
-        abort(400)
-    if 'NFQ_Level' in reqJson and type(reqJson['NFQ_Level']) is not int:
-        abort(400)
     if 'NumGraduates' in reqJson and type(reqJson['NumGraduates']) is not int:
         abort(400)
 
