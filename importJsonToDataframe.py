@@ -95,3 +95,5 @@ if __name__ == "__main__":
     result, df = getFormatted("HEO14")
     cleanData(df)
     print("The Column Headers :", list(df.columns.values))
+    df.to_csv('data.csv')
+    print("done!!!!")
