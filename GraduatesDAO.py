@@ -55,7 +55,7 @@ class GraduatesDAO:
         cursor = self.getcursor()
         # Need to check if all foreign keys exist, if not create record, return foreign key
         institutionID = self.getRefTableId("institutions", "Institutions", values[0], cursor)
-        yearID = self.getRefTableId("graduationYear", "GraduationYear", values[1], cursor)
+        yearID = self.getRefTableId("graduationyear", "GraduationYear", values[1], cursor)
         fieldID = self.getRefTableId("fieldofstudy", "FieldOfStudy", values[2], cursor)
         nfqID = self.getRefTableId("nfqlevel", "NFQLevel", values[3], cursor)
 
@@ -145,7 +145,7 @@ class GraduatesDAO:
         cursor = self.getcursor()
         # Need to check if all foreign keys exist, if not create record, return foreign key
         institutionID = self.getRefTableId("institutions", "Institutions", values[0], cursor)
-        yearID = self.getRefTableId("graduationYear", "GraduationYear", values[1], cursor)
+        yearID = self.getRefTableId("graduationyear", "GraduationYear", values[1], cursor)
         fieldID = self.getRefTableId("fieldofstudy", "FieldOfStudy", values[2], cursor)
         nfqID = self.getRefTableId("nfqlevel", "NFQLevel", values[3], cursor)
 

@@ -86,7 +86,7 @@ ConvertDataToForeignKeys(uniqueYear, "graduationyear", df, "GraduationYear")
 ###
 # Now create the Data table
 cursor.execute("""
-    CREATE TABLE IF NOT EXISTS Graduates (
+    CREATE TABLE IF NOT EXISTS graduates (
         id INT AUTO_INCREMENT,
         `Institution` INT,
         `GraduationYear` INT,
@@ -101,7 +101,7 @@ cursor.execute("""
 # Insert data into the table
 for index, row in df.iterrows():
     cursor.execute("""
-        INSERT INTO Graduates
+        INSERT INTO graduates
         (`Institution`, `GraduationYear`, `FieldOfStudy`, `NFQ_Level`, `NumGraduates`)
         VALUES (%s, %s, %s, %s, %s)
     """, (row['Institutions'], row['GraduationYear'], row['FieldofStudy'], row['NFQLevel'], row['NumberofGraduates']))
