@@ -1,6 +1,9 @@
 # DataRepProject
 Project for Data Representation 2023
 
+The web application can be run online (hosted by pythonanywhere) here: https://tynane.pythonanywhere.com/gradviewer.html
+
+
 dbconfig.py file includes:
 
 mysql = {
@@ -9,7 +12,6 @@ mysql = {
     'password':"",
     'database':"datarepproj"
 }
-
 
 To create the database and populate it.
 ---------------------------------------
@@ -85,4 +87,4 @@ Search -->
 
 A Search can be done by Institution. If the value typed in does not exist in the database no records will be shown, otherwise only the records for that institute will be displayed.
 
-There is a button to clear the search so that all records are again shown (This is also the functionality if the search button is clicked when the seach input is empty)
+There is a button to clear the search so that all records are again shown. This simply reloads the entire page. (This is also the functionality if the search button is clicked when the seach input is empty).
