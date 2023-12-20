@@ -14,7 +14,7 @@
                 <label for="searchInput" id="searchLabel">Search by Institution</label>
                 <input type="text" id="searchInput" name="searchInput">
                 <button id="searchButton" onclick="SearchByInstitute()">Go</button>
-                <button id="clearSearchButton" onclick="getAllAjax()">Clear Search</button>
+                <button id="clearSearchButton" onclick="window.location.reload()">Clear Search</button>
             </p>
         </div>
         <div>
@@ -239,7 +239,7 @@
         function SearchByInstitute(institute){
             institute = document.getElementById('searchInput').value.trim();
             if (institute == "") {
-                getAllAjax();
+                window.location.reload();
             } else {
                 getByInstitute(institute);
                 document.getElementById('searchInput').value = "";
