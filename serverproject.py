@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request, abort
 from GraduatesDAO import GraduatesDAO
+from exportDataToDatabase import exportDataToDatabase
 
 app = Flask(__name__, static_url_path='', static_folder='.')
 
@@ -8,6 +9,12 @@ app = Flask(__name__, static_url_path='', static_folder='.')
 #@app.route('/')
 #def index():
 #    return "Hello, World!"
+
+# Load data to database
+#curl "http://127.0.0.1:5000/load
+@app.route('/load')
+def loadData():
+    exportDataToDatabase.ExportDataToDB()
 
 # Get all Graduates
 #curl "http://127.0.0.1:5000/grads"

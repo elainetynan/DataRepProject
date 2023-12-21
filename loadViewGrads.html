@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> load & view graduates</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Webpage to load data from cso.ie to the database & redirect to main page -->
+        <!-- Not working yet -->
+    </body>
+    <script>
+        function loadViewData(){
+            $.ajax({
+                "url": "/load",
+                "method":"POST",
+                "data":"",
+                "dataType": "html",
+                "success":function(data){
+                    // console.log(data);
+                },
+                "error":function(xhr,status,error){
+                    console.log("error: "+status+" msg:"+error);
+                    console.log("It didn't work Elaine!");
+                }
+            });
+            window.location.href = "https://www.w3schools.com/";
+        }
+        loadViewData();
+    </script>
+</html>
