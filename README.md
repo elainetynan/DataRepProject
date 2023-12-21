@@ -39,6 +39,10 @@ Removes spaces from field names.
 
 It removes the aggreagte rows (i.e., number of graduates for: all instutions combined; all fields of study combined; all NFQ levels combined). This is data that can be later generated through scripts or applications. The dataset is quite large also so this extra data slows down the operation of the web server.
 
+Note:
+
+The CSO data does not have duplicates so I am not checkingfor this here. If you run the exportDataToDatabase file twice it will crash due to duplicate records. If running it a second time drop all tables in the database first (or delete the database).
+
 
 To view and run the web page with the data.
 -------------------------------------------
