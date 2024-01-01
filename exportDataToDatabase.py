@@ -82,7 +82,7 @@ class exportDataToDatabase:
 
         self.ConvertDataToForeignKeys(uniqueInstitutions, "institutions", df, "Institutions", conn)
         self.ConvertDataToForeignKeys(uniqueFieldStudy, "fieldofstudy", df, "FieldofStudy", conn)
-        self.ConvertDataToForeignKeys(uniqueNFQ, "nfqLevel", df, "NFQLevel", conn)
+        self.ConvertDataToForeignKeys(uniqueNFQ, "nfqlevel", df, "NFQLevel", conn)
         self.ConvertDataToForeignKeys(uniqueYear, "graduationyear", df, "GraduationYear", conn)
 
         ###
