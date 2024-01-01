@@ -81,7 +81,7 @@ class exportDataToDatabase:
         # Convert all values in data table to corresponding foreign keys to reference tables
 
         self.ConvertDataToForeignKeys(uniqueInstitutions, "institutions", df, "Institutions", conn)
-        self.ConvertDataToForeignKeys(uniqueFieldStudy, "fieldofstudy", df, "FieldofStudy", conn)
+        self.ConvertDataToForeignKeys(uniqueFieldStudy, "fieldofstudy", df, "FieldOfStudy", conn)
         self.ConvertDataToForeignKeys(uniqueNFQ, "nfqlevel", df, "NFQLevel", conn)
         self.ConvertDataToForeignKeys(uniqueYear, "graduationyear", df, "GraduationYear", conn)
 

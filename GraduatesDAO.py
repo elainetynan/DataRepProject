@@ -78,7 +78,7 @@ class GraduatesDAO:
         cursor = self.getcursor()
         # Join tables
         sql = "SELECT graduates.id, institutions.Institutions, graduationyear.GraduationYear, \
-            fieldofstudy.FieldofStudy, nfqlevel.NFQLevel, graduates.NumGraduates \
+            fieldofstudy.FieldOfStudy, nfqlevel.NFQLevel, graduates.NumGraduates \
                 FROM graduates LEFT JOIN institutions ON graduates.Institution = institutions.id \
                         LEFT JOIN fieldofstudy ON graduates.FieldOfStudy = fieldofstudy.id \
                             LEFT JOIN nfqlevel ON graduates.NFQ_Level = nfqlevel.id \
@@ -98,7 +98,7 @@ class GraduatesDAO:
         cursor = self.getcursor()
         # Join tables
         sql = "SELECT graduates.id, institutions.Institutions, graduationyear.GraduationYear, \
-            fieldofstudy.FieldofStudy, nfqlevel.NFQLevel,graduates.NumGraduates \
+            fieldofstudy.FieldOfStudy, nfqlevel.NFQLevel,graduates.NumGraduates \
                 FROM graduates LEFT JOIN institutions ON graduates.Institution = institutions.id \
                     LEFT JOIN fieldofstudy ON graduates.FieldOfStudy = fieldofstudy.id \
                         LEFT JOIN nfqlevel ON graduates.NFQ_Level = nfqlevel.id \
