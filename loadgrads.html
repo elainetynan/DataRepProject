@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title> load & view graduates</title>
@@ -6,6 +7,7 @@
     <body>
         <!-- Webpage to load data from cso.ie to the database & redirect to main page -->
         <!-- Not working yet -->
+        <h1>Redirecting...</h1>
     </body>
     <script>
         function loadViewData(){
@@ -16,13 +18,14 @@
                 "dataType": "html",
                 "success":function(data){
                     // console.log(data);
+                    console.log("*** It worked Elaine!");
                 },
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);
                     console.log("It didn't work Elaine!");
                 }
             });
-            window.location.href = "https://www.w3schools.com/";
+            window.location.href = "/gradviewer.html";
         }
         loadViewData();
     </script>

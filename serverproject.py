@@ -14,7 +14,9 @@ app = Flask(__name__, static_url_path='', static_folder='.')
 #curl "http://127.0.0.1:5000/load
 @app.route('/load')
 def loadData():
-    exportDataToDatabase.ExportDataToDB()
+    e = exportDataToDatabase()
+    done = e.ExportDataToDB()
+    return jsonify(done)
 
 # Get all Graduates
 #curl "http://127.0.0.1:5000/grads"

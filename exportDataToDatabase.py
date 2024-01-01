@@ -113,7 +113,8 @@ class exportDataToDatabase:
         conn.close()
 
         print("Database and table created successfully.")
+        return True
 
 if __name__ == "__main__":
-    exportDataToDatabase = exportDataToDatabase()
-    exportDataToDatabase.ExportDataToDB()
+    exportData = exportDataToDatabase()
+    exportData.ExportDataToDB()
