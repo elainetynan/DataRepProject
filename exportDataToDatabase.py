@@ -61,7 +61,7 @@ class exportDataToDatabase:
 
         # Create a Field of Study table and insert data into it
         self.CreateRefTable("fieldofstudy", "FieldOfStudy", cursor)
-        uniqueFieldStudy = df.FieldofStudy.unique()
+        uniqueFieldStudy = df.FieldOfStudy.unique()
         for s in uniqueFieldStudy:
             cursor.execute("INSERT INTO fieldofstudy (FieldOfStudy) VALUES (%s)", (s,))
 
@@ -106,7 +106,7 @@ class exportDataToDatabase:
                 INSERT INTO graduates
                 (`Institution`, `GraduationYear`, `FieldOfStudy`, `NFQ_Level`, `NumGraduates`)
                 VALUES (%s, %s, %s, %s, %s)
-            """, (row['Institutions'], row['GraduationYear'], row['FieldofStudy'], row['NFQLevel'], row['NumberofGraduates']))
+            """, (row['Institutions'], row['GraduationYear'], row['FieldOfStudy'], row['NFQLevel'], row['NumberofGraduates']))
 
         # Commit the changes and close the connection
         conn.commit()

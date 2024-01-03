@@ -82,10 +82,12 @@ def getFormatted(dataset):
 def cleanData(df):
     # Replace spaces in column names with underscores as it causes problems.
     df.columns = [c.replace(" ", "") for c in df.columns]
+    # Replace FieldofStudy with FieldOfStudy to avoid confusion later.
+    df.columns = [c.replace("FieldofStudy", "FieldOfStudy") for c in df.columns]
 
    # Remove duplicate (aggregate) rows and records that have no graduates
     df.drop(df[df['Institutions'] == "All Institutions"].index, inplace = True)
-    df.drop(df[df['FieldofStudy'] == "All fields of education"].index, inplace = True)
+    df.drop(df[df['FieldOfStudy'] == "All fields of education"].index, inplace = True)
     df.drop(df[df['NFQLevel'] == "All NFQ Levels"].index, inplace = True)
     df.drop(df[df['NumberofGraduates'] == 0].index, inplace = True)
     

@@ -8,6 +8,7 @@
         <!-- Webpage to load data from cso.ie to the database & redirect to main page -->
         <!-- Not working yet -->
         <h1>Redirecting...</h1>
+        <p id="error">xxx</p>
     </body>
     <script>
         function loadViewData(){
@@ -19,10 +20,12 @@
                 "success":function(data){
                     // console.log(data);
                     console.log("*** It worked Elaine!");
+                    document.getElementById('error').value = "It worked";
                 },
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);
                     console.log("It didn't work Elaine!");
+                    document.getElementById('error').value = "It DID NOT work";
                 }
             });
             window.location.href = "/gradviewer.html";
