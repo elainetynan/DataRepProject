@@ -12,11 +12,9 @@ def getAllAsFile(dataset):
     with open("cso.json", "wt") as fp:
         print(json.dumps(getAll(dataset)), file=fp)
 
-def getAll(dataset):   
-    urlBegining = "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/"
-    urlEnd = "/JSON-stat/2.0/en"
+def getAll(dataset):
     url = urlBegining + dataset + urlEnd
-    response = requests.get(url)
+    response = requests.get(url, verify=False) # verify=False disables SSL verification
     return response.json()
 
 def getFormattedAsFile(dataset):
