@@ -12,7 +12,7 @@ app = Flask(__name__, static_url_path='', static_folder='.')
 
 # Load data to database
 #curl "http://127.0.0.1:5000/load
-@app.route('/load')
+@app.route('/load', methods=['POST'])
 def loadData():
     e = exportDataToDatabase()
     done = e.ExportDataToDB()

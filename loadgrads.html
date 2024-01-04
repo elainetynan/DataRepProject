@@ -7,7 +7,7 @@
     <body>
         <!-- Webpage to load data from cso.ie to the database & redirect to main page -->
         <!-- Not working yet -->
-        <h1>Redirecting...</h1>
+        <h1>Loading...</h1>
         <p id="error">xxx</p>
     </body>
     <script>
@@ -28,8 +28,8 @@
                     document.getElementById('error').value = "It DID NOT work";
                 }
             });
-            window.location.href = "/gradviewer.html";
+            setTimeout(window.location.href = "/gradviewer.html", 60000); // redirect after 90 seconds
         }
-        loadViewData();
+        loadViewData() 
     </script>
 </html>
