@@ -13,6 +13,8 @@ def getAllAsFile(dataset):
         print(json.dumps(getAll(dataset)), file=fp)
 
 def getAll(dataset):   
+    urlBegining = "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/"
+    urlEnd = "/JSON-stat/2.0/en"
     url = urlBegining + dataset + urlEnd
     response = requests.get(url)
     return response.json()
