@@ -90,6 +90,8 @@ When a record is updated all reference tables are checked for the values, if the
 The records in the reference tables are not updated as they may be used in other records.
 CRUD functionality for the reference tables could be added at a later date.  This would require multiple pages and ideally a menu driven system.
 
+Duplicate records will not be allowed. (Key: Institution, GraduationYear, FieldOfStudy & NFQ_Level)
+
 Cancel button added to 'update form' for user friendliness.
 
 
