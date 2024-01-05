@@ -2,6 +2,7 @@ import pandas as pd
 import mysql.connector
 import numpy as np
 import importJsonToDataframe as jtd
+import dbconfig as cfg
 
 class exportDataToDatabase:
     def CreateRefTable(self, tablename, fieldname, cursor):
@@ -37,9 +38,9 @@ class exportDataToDatabase:
 
         # MariaDB connection parameters
         db_params = {
-            "host": "localhost",
-            "user": "root",
-            "password": "",
+            "host": cfg.mysql['host'],
+            "user": cfg.mysql['user'],
+            "password": cfg.mysql['password'],
         }
 
         # Connect to MariaDB server
@@ -48,7 +49,7 @@ class exportDataToDatabase:
 
         # Create a new database
         cursor.execute("CREATE DATABASE IF NOT EXISTS datarepproj")
-        cursor.execute("USE datarepproj")
+        cursor.execute("USE "+cfg.mysql['database'])
 
         ###
         # Create reference tables

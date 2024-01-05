@@ -25,7 +25,7 @@
                     console.log("It didn't work!");
                 }
             });
-            setTimeout(window.location.href = "/gradviewer.html", 60000); // redirect after 60 seconds
+            setTimeout(() => { window.location.href = "/gradviewer.html" }, 60000); // redirect after 60 seconds
         }
         loadViewData();
     </script>

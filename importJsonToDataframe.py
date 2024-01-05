@@ -14,7 +14,7 @@ def getAllAsFile(dataset):
 
 def getAll(dataset):
     url = urlBegining + dataset + urlEnd
-    response = requests.get(url, verify=False) # verify=False disables SSL verification
+    response = requests.get(url) #, verify=False) # verify=False disables SSL verification
     return response.json()
 
 def getFormattedAsFile(dataset):

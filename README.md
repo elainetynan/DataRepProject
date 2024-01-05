@@ -41,7 +41,7 @@ It removes the aggreagte rows (i.e., number of graduates for: all instutions com
 
 Note:
 
-The CSO data does not have duplicates so I am not checkingfor this here. If you run the exportDataToDatabase file twice it will crash due to duplicate records. If running it a second time drop all tables in the database first (or delete the database).
+The CSO data does not have duplicates so I am not checking for this here. If you run the exportDataToDatabase file twice it will crash due to duplicate records. If running it a second time drop all tables in the database first (or delete the database).
 
 
 To view and run the web page with the data.
