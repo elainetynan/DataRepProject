@@ -150,11 +150,19 @@ class GraduatesDAO:
         nfqID = self.getRefTableId("nfqlevel", "NFQLevel", values[3], cursor)
 
         # Update main table
-        sql="update graduates set Institution= %s,GraduationYear=%s, FieldOfStudy=%s, NFQ_Level=%s, NumGraduates=%s where id = %s"
+        sql="update graduates set Institution=%s, GraduationYear=%s, FieldOfStudy=%s, NFQ_Level=%s, NumGraduates=%s where id = %s"
         vals = (institutionID, yearID, fieldID, nfqID, values[4], values[5])
-        cursor.execute(sql, vals)
-        self.connection.commit()
-        self.closeAll()
+
+        try:
+            cursor.execute(sql, vals)
+            self.connection.commit()
+            self.closeAll()
+        except mysql.connector.Error as e:
+            if e.errno == errorcode.ER_DUP_ENTRY:
+                raise Exception("Duplicate Record")
+        finally:
+            # Close the cursor and connection
+            self.closeAll()
         
     def delete(self, id):
         cursor = self.getcursor()

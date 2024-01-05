@@ -13,8 +13,8 @@ mysql = {
     'database':"datarepproj"
 }
 
-To create the database and populate it.
----------------------------------------
+To create the database and populate it  on the local server.
+------------------------------------------------------------
 
 Ensure Wamp/Xampp server is running
 
@@ -42,6 +42,20 @@ It removes the aggreagte rows (i.e., number of graduates for: all instutions com
 Note:
 
 The CSO data does not have duplicates so I am not checking for this here. If you run the exportDataToDatabase file twice it will crash due to duplicate records. If running it a second time drop all tables in the database first (or delete the database).
+
+
+To create the database and populate it on Pythonanywhere.
+------------------------------------------------------------
+Ensure the data does not already exist.
+
+go to https://tynane.pythonanywhere.com/loadgrads.html
+
+This is a large dataset so it will take approximately 1 minute to load all the data and redirect to the main page.
+
+Note:
+
+The CSO data does not have duplicates so I am not checking for this here. If you load the loadgrads page twice it will give an error due to duplicate records before redirecting to the main page, which should have the data.
+If running the loadgrads page a second time drop all tables in the database first (or delete the database).
 
 
 To view and run the web page with the data.

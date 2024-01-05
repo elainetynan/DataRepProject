@@ -48,7 +48,7 @@ class exportDataToDatabase:
         cursor = conn.cursor()
 
         # Create a new database
-        cursor.execute("CREATE DATABASE IF NOT EXISTS datarepproj")
+        cursor.execute("CREATE DATABASE IF NOT EXISTS "+cfg.mysql['database'])
         cursor.execute("USE "+cfg.mysql['database'])
 
         ###

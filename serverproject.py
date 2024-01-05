@@ -1,4 +1,6 @@
 from flask import Flask, jsonify, request, abort
+import mysql.connector
+from mysql.connector import errorcode
 from GraduatesDAO import GraduatesDAO
 from exportDataToDatabase import exportDataToDatabase
 
@@ -86,8 +88,15 @@ def update(id):
     if 'NumGraduates' in reqJson:
         foundData['NumGraduates'] = reqJson['NumGraduates']
     values = (foundData['Institution'],foundData['GraduationYear'],foundData['FieldOfStudy'],foundData['NFQ_Level'],foundData['NumGraduates'],foundData['id'])
-    GraduatesDAO.update(values)
-    return jsonify(foundData)
+    try:
+        GraduatesDAO.update(values)
+        return jsonify(foundData)
+    except mysql.connector.Error as e:
+        if e.errno == errorcode.ER_DUP_ENTRY:
+            raise Exception("Duplicate Record")
+            #return "Duplicate Record"
+        
+    
     
 # Delete a graduate
 @app.route('/grads/<int:id>' , methods=['DELETE'])

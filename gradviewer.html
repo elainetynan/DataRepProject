@@ -308,6 +308,8 @@
                 },
                 "error":function(xhr,status,error){
                     console.log("error: "+status+" msg:"+error);
+                    window.location.reload();
+                    alert("Data cannot be changed to Duplicate record based on Institution, year, Field of study and NFQ level.");
                 }
             });
         }
