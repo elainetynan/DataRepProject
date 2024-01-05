@@ -54,8 +54,13 @@ This is a large dataset so it will take approximately 1 minute to load all the d
 
 Note:
 
-The CSO data does not have duplicates so I am not checking for this here. If you load the loadgrads page twice it will give an error due to duplicate records before redirecting to the main page, which should have the data.
+The CSO data does not have duplicates so I am not checking for this here. If you load the loadgrads page twice it will log an error due to duplicate records before redirecting to the main page, which should have the data.
 If running the loadgrads page a second time drop all tables in the database first (or delete the database).
+
+Note 2:
+
+Initially my code load the data was not working on pytonanywhere even though it was working on my local host. I was chatting with users on the pythonanywhere forum about the issue and one user pointed out that with a free pythonanywhere account, access to some websites are restricted. I requested that cso.ie be added to the 'allowedlist'. They were very efficient and were back to me in minutes to let me know that it had been added to the list. To my delight, this fixed my issue.
+
 
 
 To view and run the web page with the data.

@@ -6,12 +6,6 @@ from exportDataToDatabase import exportDataToDatabase
 
 app = Flask(__name__, static_url_path='', static_folder='.')
 
-#app = Flask(__name__)
-
-#@app.route('/')
-#def index():
-#    return "Hello, World!"
-
 # Load data to database
 # curl -X POST -H "http://127.0.0.1:5000/load
 @app.route('/load', methods=['POST'])
@@ -94,10 +88,7 @@ def update(id):
     except mysql.connector.Error as e:
         if e.errno == errorcode.ER_DUP_ENTRY:
             raise Exception("Duplicate Record")
-            #return "Duplicate Record"
         
-    
-    
 # Delete a graduate
 @app.route('/grads/<int:id>' , methods=['DELETE'])
 def delete(id):

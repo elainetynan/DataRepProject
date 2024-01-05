@@ -315,7 +315,6 @@
         }
 
         function deleteDataAjax(id){
-            //console.log(JSON.stringify('deleting '+id));
             $.ajax({
                 "url": "/grads/"+encodeURI(id),
                 "method":"DELETE",
